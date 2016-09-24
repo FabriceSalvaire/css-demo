@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Font Size</h1>
+    <h2>Title</h2>
+    {% for i in range(10, 26) %}
+	<p style="font-size: {{ i }}pt">{{ i }} pt Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+    {% endfor %}
+
+    <h2>Paragraph</h2>
+    {% for i in range(10, 18) %}
+	<p style="font-size: {{ i }}pt">
+	    {{ i }} pt Eius populus ab incunabulis primis ad usque
+	    pueritiae tempus extremum, quod annis circumcluditur fere trecentis,
+	    circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices
+	    bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex
+	    omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque
+	    vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae
+	    discessit.
+	</p>
+    {% endfor %}
+{% endblock %}

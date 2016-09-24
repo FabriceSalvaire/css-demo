@@ -1,0 +1,21 @@
+$color-gray-base: #000;
+$color-gray-0: lighten($color-gray-base, 0%);
+$color-gray-10: lighten($color-gray-base, 10%);
+$color-gray-20: lighten($color-gray-base, 20%);
+$color-gray-30: lighten($color-gray-base, 30%);
+$color-gray-40: lighten($color-gray-base, 40%);
+$color-gray-50: lighten($color-gray-base, 50%);
+$color-gray-60: lighten($color-gray-base, 60%);
+$color-gray-70: lighten($color-gray-base, 70%);
+$color-gray-80: lighten($color-gray-base, 80%);
+$color-gray-90: lighten($color-gray-base, 90%);
+
+@for $i from 0 through 10 {
+    $value: $i * 10;
+    .color-gray-#{$value} {
+	color: lighten(#000, $value);
+    }
+    .inverted-color-gray-#{$value} {
+	background: lighten(#000, $value);
+    }
+}

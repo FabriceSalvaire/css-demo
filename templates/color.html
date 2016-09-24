@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Color</h1>
+    <h2>Title</h2>
+    {% for i in range(0, 100, 10) %}
+	<p style="font-size: 12pt" class="color-gray-{{ i }}">
+	    {{ i }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+    {% endfor %}
+
+    <h2>Paragraph</h2>
+    {% for i in range(0, 100, 10) %}
+	<p style="font-size: 12pt" class="color-gray-{{ i }}">{{ i }}%
+	    Eius populus ab incunabulis primis ad usque
+	    pueritiae tempus extremum, quod annis circumcluditur fere trecentis,
+	    circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices
+	    bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex
+	    omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque
+	    vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae
+	    discessit.
+	</p>
+    {% endfor %}
+
+    <h2>Background</h2>
+    {% for i in range(0, 100, 10) %}
+	<h3>background {{ i }}%</h3>
+	<div class="inverted-color-gray-{{ i }}" style="padding: 10px">
+	    {% for j in range(0, 110, 10) %}
+		{% if  (i-j)|abs > 20 %}
+		    <p style="font-size: 12pt" class="color-gray-{{ j }} ">
+			{{ j }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+		{% endif %}
+	    {% endfor %}
+	</div>
+    {% endfor %}
+
+    <h2>Hue</h2>
+    {% for hue in range(0, 360, 10) %}
+	<h3 style="color: hsl({{ hue }}, 100%, 50%)">Hue {{ hue }}</h3>
+	{% for saturation in range(100, 0, -20) %}
+	    <p style="font-size: 16pt; color: hsl({{ hue }}, {{ saturation }}%, 50%); margin-left: {{ 100 - saturation }}px">
+		{{ saturation }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+	{% endfor %}
+    {% endfor %}
+
+    <h2>Hue on inverted background</h2>
+    {% for hue in range(0, 360, 10) %}
+	<h3 style="color: hsl({{ hue }}, 100%, 50%)">Hue {{ hue }}</h3>
+	<div class="inverted-color-gray-20" style="padding: 10px">
+	    {% for saturation in range(100, 0, -20) %}
+		<p style="font-size: 16pt; color: hsl({{ hue }}, {{ saturation }}%, 50%); margin-left: {{ 100 - saturation }}px">
+		    {{ saturation }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+	    {% endfor %}
+	</div>
+    {% endfor %}
+
+    <h2>Color Contrast Table</h2>
+    <table class="table" style="font-size: 13pt; text-align: center">
+	<tr style="color: #fff">
+	    <td style="background: #fff">Contrast</td>
+	    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+	    {% for hue2 in range(0, 360, 30) %}
+		<td style="background: hsl({{ hue2 }}, 90%, 50%)">Contrast</td>
+	    {% endfor %}
+	</tr>
+	<tr style="color: #000">
+	    <td style="background: #fff">Contrast</td>
+	    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+	    {% for hue2 in range(0, 360, 30) %}
+		<td style="background: hsl({{ hue2 }}, 90%, 50%)">Contrast</td>
+	    {% endfor %}
+	</tr>
+	{% for hue1 in range(0, 360, 30) %}
+	    <tr style="color: hsl({{ hue1 }}, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		{% for hue2 in range(0, 360, 30) %}
+		    <td style="background: hsl({{ hue2 }}, 90%, 50%)">Contrast</td>
+		{% endfor %}
+	    </tr>
+	{% endfor %}
+    </table>
+
+    <h2>Luminosity Contrast Table</h2>
+    <table class="table" style="font-size: 13pt; text-align: center">
+	<tr style="color: #fff">
+	    <td></td>
+	    {% for luminosity in range(0, 110, 10) %}
+		<td style="background: hsl(0, 0%, {{ luminosity }}%)">Contrast</td>
+	    {% endfor %}
+	</tr>
+	<tr style="color: #000">
+	    <td></td>
+	    {% for luminosity in range(0, 110, 10) %}
+		<td style="background: hsl(0, 0%, {{ luminosity }}%)">Contrast</td>
+	    {% endfor %}
+	</tr>
+	{% for hue1 in range(0, 360, 20) %}
+	    <tr style="color: hsl({{ hue1 }}, 90%, 50%)">
+		<td>{{ hue1 }}</td>
+		{% for luminosity in range(0, 110, 10) %}
+		    <td style="background: hsl(0, 0%, {{ luminosity }}%)">Contrast</td>
+		{% endfor %}
+	    </tr>
+	{% endfor %}
+    </table>
+{% endblock %}

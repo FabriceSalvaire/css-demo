@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> Home </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="None">
+	<link rel="apple-touch-icon" href="static/favicon.png">
+	<link rel="icon" type="image/png" href="static/favicon.png">
+	<!--[if IE]><link rel="shortcut icon" href="static/favicon.ico"><![endif]-->
+	<link rel="stylesheet" href="static/css/base.css">
+	<!--[if lt IE 9]>
+	<script src="static/js/libs/html5shiv.min.js"></script>
+	<script src="static/js/libs/respond.min.js"></script>
+	<![endif]-->
+    </head>
+
+    <body id="page-top" class="noscript lang-en tpl-fullwidth">
+	<header class="navbar navbar-head navbar-inverse">
+            <div class="container">
+		<div class="navbar-header">
+                    <h1 class="navbar-brand">
+			<a href="/en/">
+                            <span class="sr-only"></span>
+                            <img src="static/img/logo.svg" alt="" height="35" />
+			</a>
+                    </h1>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".js-navbar-header">
+			<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+		</div>
+
+		<h2 class="sr-only">Shortcuts</h2>
+		<ul class="skip-links">
+                    <li><a href="/en/" title="[Alt + 0]" accesskey="0">Go to home</a></li>
+                    <li><a href="#page-navigation" title="[Alt + 1]" accesskey="1">Jump to navigation</a></li>
+                    <li><a href="#page-content" title="[Alt + 2]" accesskey="2">Jump to content</a></li>
+                    <li><a href="#page-footer" title="[Alt + 3]" accesskey="3">Contact</a></li>
+		</ul>
+
+		<div class="navbar-collapse collapse js-navbar-header">
+                    <nav class="nav navbar-main navbar-right" id="page-navigation" role="navigation">
+                        <h2 class="sr-only">Navigation</h2>
+                        <ul class="nav navbar-nav">
+			    <li class="child active first">
+				<a href=""><span>Home</span></a></li>
+
+			    <li class="child children dropdown">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown">
+				    <span>Menu<span class="caret"></span> </span> </a>
+				<ul class="dropdown-menu" role="menu">
+				    <li class="child first">
+					<a href=""> <span>Menu 1</span></a></li>
+				    <li class="child">
+					<a href=""><span>Menu 2</span></a></li>
+				</ul>
+			    </li>
+
+			    <li class="child last">
+				<a href=""><span>Blog</span></a></li>
+
+                            <li class="divider" role="presentation"><span class="sr-only">Separator</span></li>
+			    <li class="child lang dropdown">
+				<a href="/en/" class="dropdown-toggle" data-toggle="dropdown"><span>English <span class="caret"></span></span></a>
+				<ul class="dropdown-menu" role="menu">
+				    <li class="child lang"><a href="/fr/"><span>Français</span></a></li>
+				</ul>
+			    </li>
+                        </ul>
+                    </nav>
+		</div>
+	    </div>
+	</header>
+
+	<hr class="sr-only" id="page-content" />
+	<div class="container">
+	    {% block content %}{% endblock %}
+	</div>
+	<hr class="sr-only" />
+
+	<footer class="footer" role="contentinfo">
+            <h1 class="sr-only" id="page-footer">Sitemap</h1>
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="pull-right"><a href="#page-top" data-spy="scroll"><span class="fa fa-left fa-arrow-up"></span> Back to top</a></li>
+                </ul>
+		<div class="col-sm-16">
+                    <p>CopyRight © 2016 Demo CSS</p>
+		</div>
+            </div>
+	</footer>
+
+	<script src="static/js/libs/jquery.min.js"></script>
+	<script src="static/js/libs/bootstrap.min.js"></script>
+	<script src="static/js/libs/class.min.js"></script>
+	<script src="static/js/libs/outdatedBrowser.min.js"></script>
+	<script src="static/js/addons/cl.utils.js"></script>
+	<script src="static/js/base.js"></script>
+
+	<div class="browser-outdated" id="outdated" hidden="hidden">
+	    <noscript><h3>Please enable JavaScript</h3></noscript>
+	    <h3>Your browser is out-of-date!</h3>
+	    <p>Update your browser to view this website correctly.</p>
+	    <p>
+		<a href="http://outdatedbrowser.com/" class="btn btn-lg btn-outline" id="btnUpdateBrowser">
+		    Update my browser now
+		</a>
+	    </p>
+	    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+	</div>
+
+    </body>
+</html>
