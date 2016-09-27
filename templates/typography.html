@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "_base.html" %}
 
 {% block content %}
     <h1>Font Size</h1>
@@ -9,8 +9,9 @@
 
     <h2>Paragraph</h2>
     {% for i in range(10, 18) %}
+	<h3>{{ i }} pt</h3>
 	<p style="font-size: {{ i }}pt">
-	    {{ i }} pt Eius populus ab incunabulis primis ad usque
+	    Eius populus ab incunabulis primis ad usque
 	    pueritiae tempus extremum, quod annis circumcluditur fere trecentis,
 	    circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices
 	    bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex

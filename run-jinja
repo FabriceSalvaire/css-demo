@@ -4,19 +4,23 @@
 
 from jinja2 import Environment, FileSystemLoader
 
+import glob
 import os
 
 ####################################################################################################
 
 environment = Environment(loader = FileSystemLoader('templates', followlinks=True))
 
-pages = (
-    'typography.html',
-    'color.html',
+pages = [os.path.basename(x) for x in glob.glob('templates/[a-z]*.html')]
+
+menus = (
+    {'href': 'typography.html', 'title':'Typography'},
+    {'href': 'colour.html', 'title':'Colour'},
 )
 
 for page in pages:
     template = environment.get_template(page)
+    print("Generate " + page)
     with open(os.path.join('html', page), 'w') as f:
-        f.write(template.render())
+        f.write(template.render(menus = menus))
 

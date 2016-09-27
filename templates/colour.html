@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "_base.html" %}
 
 {% block content %}
     <h1>Color</h1>
@@ -102,6 +102,32 @@
 		    <td style="background: hsl(0, 0%, {{ luminosity }}%)">Contrast</td>
 		{% endfor %}
 	    </tr>
+	{% endfor %}
+    </table>
+
+    <h2>Blue Table</h2>
+    <table class="table" style="font-size: 13pt; text-align: center">
+	{% for luminosity in range(40, 70, 10) %}
+	    {% for hue in range(200, 250, 10) %}
+		<tr>
+		    {% for satutation in range(50, 110, 10) %}
+			<td style="color: hsl({{ hue }}, {{ satutation }}%, {{ luminosity }}%)">Contrast {{ hue }} {{ satutation }} {{ luminosity }}</td>
+		    {% endfor %}
+		</tr>
+	    {% endfor %}
+	{% endfor %}
+    </table>
+
+    <h2>Black Table</h2>
+    <table class="table inverted-color-gray-20" style="font-size: 13pt; text-align: center">
+	{% for luminosity in range(40, 70, 10) %}
+	    {% for hue in range(30, 120, 10) %}
+		<tr>
+		    {% for satutation in range(50, 110, 10) %}
+			<td style="color: hsl({{ hue }}, {{ satutation }}%, {{ luminosity }}%)">Contrast {{ hue }} {{ satutation }} {{ luminosity }}</td>
+		    {% endfor %}
+		</tr>
+	    {% endfor %}
 	{% endfor %}
     </table>
 {% endblock %}

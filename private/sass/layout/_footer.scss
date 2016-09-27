@@ -1,0 +1,12 @@
+// #############################################################################
+// Footer
+
+// all styles related to the global footer should be declared within this file
+// apply the "sites/" nesting described within the documentation if the file is
+// getting to large
+
+footer {
+    padding: 2*$padding-large-vertical 0;
+    background: $navbar-inverse-bg;
+    color: $navbar-inverse-color;
+}
