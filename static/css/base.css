@@ -9605,3 +9605,8 @@ a.brand-gray-lighter:focus {
 
 .col-linebreak {
   border-left: 1px dotted #777777; }
+
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 300; }

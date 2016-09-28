@@ -44,10 +44,10 @@
 				<ul class="dropdown-menu" role="menu">
 				    
 					<li class="child first">
-					    <a href="typography.html"><span>Typography</span></a></li>
+					    <a href="colour.html"><span>Colour</span></a></li>
 				    
 					<li class="child first">
-					    <a href="colour.html"><span>Colour</span></a></li>
+					    <a href="typography.html"><span>Typography</span></a></li>
 				    
 				</ul>
 			    </li>
@@ -60,8 +60,1026 @@
 	<hr class="sr-only" id="page-content" />
 	<div class="container">
 	    
-    <h1>Color</h1>
-    <h2>Title</h2>
+    <h1>Colour</h1>
+
+
+    <h2>Table of Contents</h2>
+    <ul>
+	<li><a href="#introduction">Introduction</a></li>
+	<li><a href="#color-contrast-table">Color Contrast Table</a></li>
+	<li><a href="#luminosity-contrast-table">Luminosity Contrast Table</a></li>
+	<li><a href="#foreground-gray-level">Foreground Gray Level</a></li>
+	<li><a href="#background-gray-level">Background Gray Level</a></li>
+	<li><a href="#blue-table">Blue Foreground Table</a></li>
+	<li><a href="#dark-table">Dark Background Table</a></li>
+	<li><a href="#foreground-hue">Foreground Hue</a></li>
+	<li><a href="#foreground-hue-on-nverted">Foreground Hue on inverted background</a></li>
+    </ul>
+
+
+    <h2 id="introduction">Introduction</h2>
+    <p>
+	In practice a colour is constructed as a painter mixes primary colours. A colour is defined by:
+	<ul>
+	    <li>its <strong>hue</strong> (red, blue, green, etc.),</li>
+	    <li>a colour <strong>saturation</strong> which measure the colour purity,</li>
+	    <li>and a <strong>brightness</strong>.</li>
+	</ul>
+	Hue is usually defined as an angle position on a colour wheel.
+    </p>
+    <p>
+	<strong>Rule: A desaturated or pastel colour looks softer than a pure red, green or blue.</strong>
+    </p>
+    <p>
+	<strong>Rule: The foreground and background colour must maximise the contrast.</strong><br>
+	This concept is normalised in architectural design of buildings dedicated to public in order
+	to satisfy all kind of visual perceptions.<br>
+	Contrast can be accurately measured with a color checker (brightness difference).<br>
+    </p>
+    <p>
+	<strong>Rule: On white background, a dark or bluish (yellow-redish-orange) foreground colour are best.</strong><br>
+	<strong>Rule: On dark background, a white or yellow-green (orange) foreground colour are best.</strong><br>
+	Both are dual.
+    </p>
+
+
+    <h2 id="color-contrast-table">Color Contrast Table</h2>
+    <p><strong>
+	Notice the poor contrasted circular zones in the table.<br>
+	Remenber the hue is defined on a wheel and we can thus wrap the rows and columns to form a sphere.
+    </strong></p>
+    <table class="table" style="font-size: 13pt; text-align: center">
+	<tr style="color: #fff">
+	    <td style="background: #fff">Contrast</td>
+	    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(30, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(60, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(90, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(120, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(150, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(180, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(210, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(240, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(270, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(300, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(330, 90%, 50%)">Contrast</td>
+	    
+	</tr>
+	<tr style="color: #000">
+	    <td style="background: #fff">Contrast</td>
+	    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(30, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(60, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(90, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(120, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(150, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(180, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(210, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(240, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(270, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(300, 90%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(330, 90%, 50%)">Contrast</td>
+	    
+	</tr>
+	
+	    <tr style="color: hsl(0, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(30, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(60, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(90, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(120, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(150, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(180, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(210, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(240, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(270, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(300, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(330, 90%, 50%)">
+		<td style="background: #fff">Contrast</td>
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
+		
+	    </tr>
+	
+    </table>
+
+
+    <h2 id="luminosity-contrast-table">Luminosity Contrast Table</h2>
+    <p><strong>
+	Notice the contrasted triangles.<br>
+	Remenber the hue is defined on a wheel and we can thus wrap the rows to form a cylinder.
+    </strong></p>
+    <table class="table" style="font-size: 13pt; text-align: center">
+	<tr style="color: #fff">
+	    <td></td>
+	    
+		<td style="background: hsl(0, 0%, 0%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 10%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 30%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 40%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 60%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 70%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 80%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 90%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 100%)">Contrast</td>
+	    
+	</tr>
+	<tr style="color: #000">
+	    <td></td>
+	    
+		<td style="background: hsl(0, 0%, 0%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 10%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 30%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 40%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 50%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 60%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 70%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 80%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 90%)">Contrast</td>
+	    
+		<td style="background: hsl(0, 0%, 100%)">Contrast</td>
+	    
+	</tr>
+	
+	    <tr style="color: hsl(0, 90%, 50%)">
+		<td>0</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(20, 90%, 50%)">
+		<td>20</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(40, 90%, 50%)">
+		<td>40</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(60, 90%, 50%)">
+		<td>60</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(80, 90%, 50%)">
+		<td>80</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(100, 90%, 50%)">
+		<td>100</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(120, 90%, 50%)">
+		<td>120</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(140, 90%, 50%)">
+		<td>140</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(160, 90%, 50%)">
+		<td>160</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(180, 90%, 50%)">
+		<td>180</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(200, 90%, 50%)">
+		<td>200</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(220, 90%, 50%)">
+		<td>220</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(240, 90%, 50%)">
+		<td>240</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(260, 90%, 50%)">
+		<td>260</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(280, 90%, 50%)">
+		<td>280</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(300, 90%, 50%)">
+		<td>300</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(320, 90%, 50%)">
+		<td>320</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+	    <tr style="color: hsl(340, 90%, 50%)">
+		<td>340</td>
+		
+		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
+		
+		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
+		
+	    </tr>
+	
+    </table>
+
+
+    <h2 id="foreground-gray-level">Foreground Gray Level</h2>
     
 	<p style="font-size: 12pt" class="color-gray-0">
 	    0% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
@@ -94,7 +1112,6 @@
 	    90% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
     
 
-    <h2>Paragraph</h2>
     
 	<p style="font-size: 12pt" class="color-gray-0">0%
 	    Eius populus ab incunabulis primis ad usque
@@ -197,7 +1214,8 @@
 	</p>
     
 
-    <h2>Background</h2>
+
+    <h2 id="background-gray-level">Background Gray Level</h2>
     
 	<h3>background 0%</h3>
 	<div class="inverted-color-gray-0" style="padding: 10px">
@@ -662,7 +1680,704 @@
 	</div>
     
 
-    <h2>Hue</h2>
+
+    <h2 id="blue-table">Blue Foreground Table</h2>
+    <table class="table" style="font-size: 13pt; text-align: center">
+	
+	    
+		<tr>
+		    
+			<td style="color: hsl(200, 50%, 40%)">Contrast 200 50 40</td>
+		    
+			<td style="color: hsl(200, 60%, 40%)">Contrast 200 60 40</td>
+		    
+			<td style="color: hsl(200, 70%, 40%)">Contrast 200 70 40</td>
+		    
+			<td style="color: hsl(200, 80%, 40%)">Contrast 200 80 40</td>
+		    
+			<td style="color: hsl(200, 90%, 40%)">Contrast 200 90 40</td>
+		    
+			<td style="color: hsl(200, 100%, 40%)">Contrast 200 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(210, 50%, 40%)">Contrast 210 50 40</td>
+		    
+			<td style="color: hsl(210, 60%, 40%)">Contrast 210 60 40</td>
+		    
+			<td style="color: hsl(210, 70%, 40%)">Contrast 210 70 40</td>
+		    
+			<td style="color: hsl(210, 80%, 40%)">Contrast 210 80 40</td>
+		    
+			<td style="color: hsl(210, 90%, 40%)">Contrast 210 90 40</td>
+		    
+			<td style="color: hsl(210, 100%, 40%)">Contrast 210 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(220, 50%, 40%)">Contrast 220 50 40</td>
+		    
+			<td style="color: hsl(220, 60%, 40%)">Contrast 220 60 40</td>
+		    
+			<td style="color: hsl(220, 70%, 40%)">Contrast 220 70 40</td>
+		    
+			<td style="color: hsl(220, 80%, 40%)">Contrast 220 80 40</td>
+		    
+			<td style="color: hsl(220, 90%, 40%)">Contrast 220 90 40</td>
+		    
+			<td style="color: hsl(220, 100%, 40%)">Contrast 220 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(230, 50%, 40%)">Contrast 230 50 40</td>
+		    
+			<td style="color: hsl(230, 60%, 40%)">Contrast 230 60 40</td>
+		    
+			<td style="color: hsl(230, 70%, 40%)">Contrast 230 70 40</td>
+		    
+			<td style="color: hsl(230, 80%, 40%)">Contrast 230 80 40</td>
+		    
+			<td style="color: hsl(230, 90%, 40%)">Contrast 230 90 40</td>
+		    
+			<td style="color: hsl(230, 100%, 40%)">Contrast 230 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(240, 50%, 40%)">Contrast 240 50 40</td>
+		    
+			<td style="color: hsl(240, 60%, 40%)">Contrast 240 60 40</td>
+		    
+			<td style="color: hsl(240, 70%, 40%)">Contrast 240 70 40</td>
+		    
+			<td style="color: hsl(240, 80%, 40%)">Contrast 240 80 40</td>
+		    
+			<td style="color: hsl(240, 90%, 40%)">Contrast 240 90 40</td>
+		    
+			<td style="color: hsl(240, 100%, 40%)">Contrast 240 100 40</td>
+		    
+		</tr>
+	    
+	
+	    
+		<tr>
+		    
+			<td style="color: hsl(200, 50%, 50%)">Contrast 200 50 50</td>
+		    
+			<td style="color: hsl(200, 60%, 50%)">Contrast 200 60 50</td>
+		    
+			<td style="color: hsl(200, 70%, 50%)">Contrast 200 70 50</td>
+		    
+			<td style="color: hsl(200, 80%, 50%)">Contrast 200 80 50</td>
+		    
+			<td style="color: hsl(200, 90%, 50%)">Contrast 200 90 50</td>
+		    
+			<td style="color: hsl(200, 100%, 50%)">Contrast 200 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(210, 50%, 50%)">Contrast 210 50 50</td>
+		    
+			<td style="color: hsl(210, 60%, 50%)">Contrast 210 60 50</td>
+		    
+			<td style="color: hsl(210, 70%, 50%)">Contrast 210 70 50</td>
+		    
+			<td style="color: hsl(210, 80%, 50%)">Contrast 210 80 50</td>
+		    
+			<td style="color: hsl(210, 90%, 50%)">Contrast 210 90 50</td>
+		    
+			<td style="color: hsl(210, 100%, 50%)">Contrast 210 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(220, 50%, 50%)">Contrast 220 50 50</td>
+		    
+			<td style="color: hsl(220, 60%, 50%)">Contrast 220 60 50</td>
+		    
+			<td style="color: hsl(220, 70%, 50%)">Contrast 220 70 50</td>
+		    
+			<td style="color: hsl(220, 80%, 50%)">Contrast 220 80 50</td>
+		    
+			<td style="color: hsl(220, 90%, 50%)">Contrast 220 90 50</td>
+		    
+			<td style="color: hsl(220, 100%, 50%)">Contrast 220 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(230, 50%, 50%)">Contrast 230 50 50</td>
+		    
+			<td style="color: hsl(230, 60%, 50%)">Contrast 230 60 50</td>
+		    
+			<td style="color: hsl(230, 70%, 50%)">Contrast 230 70 50</td>
+		    
+			<td style="color: hsl(230, 80%, 50%)">Contrast 230 80 50</td>
+		    
+			<td style="color: hsl(230, 90%, 50%)">Contrast 230 90 50</td>
+		    
+			<td style="color: hsl(230, 100%, 50%)">Contrast 230 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(240, 50%, 50%)">Contrast 240 50 50</td>
+		    
+			<td style="color: hsl(240, 60%, 50%)">Contrast 240 60 50</td>
+		    
+			<td style="color: hsl(240, 70%, 50%)">Contrast 240 70 50</td>
+		    
+			<td style="color: hsl(240, 80%, 50%)">Contrast 240 80 50</td>
+		    
+			<td style="color: hsl(240, 90%, 50%)">Contrast 240 90 50</td>
+		    
+			<td style="color: hsl(240, 100%, 50%)">Contrast 240 100 50</td>
+		    
+		</tr>
+	    
+	
+	    
+		<tr>
+		    
+			<td style="color: hsl(200, 50%, 60%)">Contrast 200 50 60</td>
+		    
+			<td style="color: hsl(200, 60%, 60%)">Contrast 200 60 60</td>
+		    
+			<td style="color: hsl(200, 70%, 60%)">Contrast 200 70 60</td>
+		    
+			<td style="color: hsl(200, 80%, 60%)">Contrast 200 80 60</td>
+		    
+			<td style="color: hsl(200, 90%, 60%)">Contrast 200 90 60</td>
+		    
+			<td style="color: hsl(200, 100%, 60%)">Contrast 200 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(210, 50%, 60%)">Contrast 210 50 60</td>
+		    
+			<td style="color: hsl(210, 60%, 60%)">Contrast 210 60 60</td>
+		    
+			<td style="color: hsl(210, 70%, 60%)">Contrast 210 70 60</td>
+		    
+			<td style="color: hsl(210, 80%, 60%)">Contrast 210 80 60</td>
+		    
+			<td style="color: hsl(210, 90%, 60%)">Contrast 210 90 60</td>
+		    
+			<td style="color: hsl(210, 100%, 60%)">Contrast 210 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(220, 50%, 60%)">Contrast 220 50 60</td>
+		    
+			<td style="color: hsl(220, 60%, 60%)">Contrast 220 60 60</td>
+		    
+			<td style="color: hsl(220, 70%, 60%)">Contrast 220 70 60</td>
+		    
+			<td style="color: hsl(220, 80%, 60%)">Contrast 220 80 60</td>
+		    
+			<td style="color: hsl(220, 90%, 60%)">Contrast 220 90 60</td>
+		    
+			<td style="color: hsl(220, 100%, 60%)">Contrast 220 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(230, 50%, 60%)">Contrast 230 50 60</td>
+		    
+			<td style="color: hsl(230, 60%, 60%)">Contrast 230 60 60</td>
+		    
+			<td style="color: hsl(230, 70%, 60%)">Contrast 230 70 60</td>
+		    
+			<td style="color: hsl(230, 80%, 60%)">Contrast 230 80 60</td>
+		    
+			<td style="color: hsl(230, 90%, 60%)">Contrast 230 90 60</td>
+		    
+			<td style="color: hsl(230, 100%, 60%)">Contrast 230 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(240, 50%, 60%)">Contrast 240 50 60</td>
+		    
+			<td style="color: hsl(240, 60%, 60%)">Contrast 240 60 60</td>
+		    
+			<td style="color: hsl(240, 70%, 60%)">Contrast 240 70 60</td>
+		    
+			<td style="color: hsl(240, 80%, 60%)">Contrast 240 80 60</td>
+		    
+			<td style="color: hsl(240, 90%, 60%)">Contrast 240 90 60</td>
+		    
+			<td style="color: hsl(240, 100%, 60%)">Contrast 240 100 60</td>
+		    
+		</tr>
+	    
+	
+    </table>
+
+
+    <h2 id="dark-table">Dark Background Table</h2>
+    <table class="table inverted-color-gray-20" style="font-size: 13pt; text-align: center">
+	
+	    
+		<tr>
+		    
+			<td style="color: hsl(30, 50%, 40%)">Contrast 30 50 40</td>
+		    
+			<td style="color: hsl(30, 60%, 40%)">Contrast 30 60 40</td>
+		    
+			<td style="color: hsl(30, 70%, 40%)">Contrast 30 70 40</td>
+		    
+			<td style="color: hsl(30, 80%, 40%)">Contrast 30 80 40</td>
+		    
+			<td style="color: hsl(30, 90%, 40%)">Contrast 30 90 40</td>
+		    
+			<td style="color: hsl(30, 100%, 40%)">Contrast 30 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(40, 50%, 40%)">Contrast 40 50 40</td>
+		    
+			<td style="color: hsl(40, 60%, 40%)">Contrast 40 60 40</td>
+		    
+			<td style="color: hsl(40, 70%, 40%)">Contrast 40 70 40</td>
+		    
+			<td style="color: hsl(40, 80%, 40%)">Contrast 40 80 40</td>
+		    
+			<td style="color: hsl(40, 90%, 40%)">Contrast 40 90 40</td>
+		    
+			<td style="color: hsl(40, 100%, 40%)">Contrast 40 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(50, 50%, 40%)">Contrast 50 50 40</td>
+		    
+			<td style="color: hsl(50, 60%, 40%)">Contrast 50 60 40</td>
+		    
+			<td style="color: hsl(50, 70%, 40%)">Contrast 50 70 40</td>
+		    
+			<td style="color: hsl(50, 80%, 40%)">Contrast 50 80 40</td>
+		    
+			<td style="color: hsl(50, 90%, 40%)">Contrast 50 90 40</td>
+		    
+			<td style="color: hsl(50, 100%, 40%)">Contrast 50 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(60, 50%, 40%)">Contrast 60 50 40</td>
+		    
+			<td style="color: hsl(60, 60%, 40%)">Contrast 60 60 40</td>
+		    
+			<td style="color: hsl(60, 70%, 40%)">Contrast 60 70 40</td>
+		    
+			<td style="color: hsl(60, 80%, 40%)">Contrast 60 80 40</td>
+		    
+			<td style="color: hsl(60, 90%, 40%)">Contrast 60 90 40</td>
+		    
+			<td style="color: hsl(60, 100%, 40%)">Contrast 60 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(70, 50%, 40%)">Contrast 70 50 40</td>
+		    
+			<td style="color: hsl(70, 60%, 40%)">Contrast 70 60 40</td>
+		    
+			<td style="color: hsl(70, 70%, 40%)">Contrast 70 70 40</td>
+		    
+			<td style="color: hsl(70, 80%, 40%)">Contrast 70 80 40</td>
+		    
+			<td style="color: hsl(70, 90%, 40%)">Contrast 70 90 40</td>
+		    
+			<td style="color: hsl(70, 100%, 40%)">Contrast 70 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(80, 50%, 40%)">Contrast 80 50 40</td>
+		    
+			<td style="color: hsl(80, 60%, 40%)">Contrast 80 60 40</td>
+		    
+			<td style="color: hsl(80, 70%, 40%)">Contrast 80 70 40</td>
+		    
+			<td style="color: hsl(80, 80%, 40%)">Contrast 80 80 40</td>
+		    
+			<td style="color: hsl(80, 90%, 40%)">Contrast 80 90 40</td>
+		    
+			<td style="color: hsl(80, 100%, 40%)">Contrast 80 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(90, 50%, 40%)">Contrast 90 50 40</td>
+		    
+			<td style="color: hsl(90, 60%, 40%)">Contrast 90 60 40</td>
+		    
+			<td style="color: hsl(90, 70%, 40%)">Contrast 90 70 40</td>
+		    
+			<td style="color: hsl(90, 80%, 40%)">Contrast 90 80 40</td>
+		    
+			<td style="color: hsl(90, 90%, 40%)">Contrast 90 90 40</td>
+		    
+			<td style="color: hsl(90, 100%, 40%)">Contrast 90 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(100, 50%, 40%)">Contrast 100 50 40</td>
+		    
+			<td style="color: hsl(100, 60%, 40%)">Contrast 100 60 40</td>
+		    
+			<td style="color: hsl(100, 70%, 40%)">Contrast 100 70 40</td>
+		    
+			<td style="color: hsl(100, 80%, 40%)">Contrast 100 80 40</td>
+		    
+			<td style="color: hsl(100, 90%, 40%)">Contrast 100 90 40</td>
+		    
+			<td style="color: hsl(100, 100%, 40%)">Contrast 100 100 40</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(110, 50%, 40%)">Contrast 110 50 40</td>
+		    
+			<td style="color: hsl(110, 60%, 40%)">Contrast 110 60 40</td>
+		    
+			<td style="color: hsl(110, 70%, 40%)">Contrast 110 70 40</td>
+		    
+			<td style="color: hsl(110, 80%, 40%)">Contrast 110 80 40</td>
+		    
+			<td style="color: hsl(110, 90%, 40%)">Contrast 110 90 40</td>
+		    
+			<td style="color: hsl(110, 100%, 40%)">Contrast 110 100 40</td>
+		    
+		</tr>
+	    
+	
+	    
+		<tr>
+		    
+			<td style="color: hsl(30, 50%, 50%)">Contrast 30 50 50</td>
+		    
+			<td style="color: hsl(30, 60%, 50%)">Contrast 30 60 50</td>
+		    
+			<td style="color: hsl(30, 70%, 50%)">Contrast 30 70 50</td>
+		    
+			<td style="color: hsl(30, 80%, 50%)">Contrast 30 80 50</td>
+		    
+			<td style="color: hsl(30, 90%, 50%)">Contrast 30 90 50</td>
+		    
+			<td style="color: hsl(30, 100%, 50%)">Contrast 30 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(40, 50%, 50%)">Contrast 40 50 50</td>
+		    
+			<td style="color: hsl(40, 60%, 50%)">Contrast 40 60 50</td>
+		    
+			<td style="color: hsl(40, 70%, 50%)">Contrast 40 70 50</td>
+		    
+			<td style="color: hsl(40, 80%, 50%)">Contrast 40 80 50</td>
+		    
+			<td style="color: hsl(40, 90%, 50%)">Contrast 40 90 50</td>
+		    
+			<td style="color: hsl(40, 100%, 50%)">Contrast 40 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(50, 50%, 50%)">Contrast 50 50 50</td>
+		    
+			<td style="color: hsl(50, 60%, 50%)">Contrast 50 60 50</td>
+		    
+			<td style="color: hsl(50, 70%, 50%)">Contrast 50 70 50</td>
+		    
+			<td style="color: hsl(50, 80%, 50%)">Contrast 50 80 50</td>
+		    
+			<td style="color: hsl(50, 90%, 50%)">Contrast 50 90 50</td>
+		    
+			<td style="color: hsl(50, 100%, 50%)">Contrast 50 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(60, 50%, 50%)">Contrast 60 50 50</td>
+		    
+			<td style="color: hsl(60, 60%, 50%)">Contrast 60 60 50</td>
+		    
+			<td style="color: hsl(60, 70%, 50%)">Contrast 60 70 50</td>
+		    
+			<td style="color: hsl(60, 80%, 50%)">Contrast 60 80 50</td>
+		    
+			<td style="color: hsl(60, 90%, 50%)">Contrast 60 90 50</td>
+		    
+			<td style="color: hsl(60, 100%, 50%)">Contrast 60 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(70, 50%, 50%)">Contrast 70 50 50</td>
+		    
+			<td style="color: hsl(70, 60%, 50%)">Contrast 70 60 50</td>
+		    
+			<td style="color: hsl(70, 70%, 50%)">Contrast 70 70 50</td>
+		    
+			<td style="color: hsl(70, 80%, 50%)">Contrast 70 80 50</td>
+		    
+			<td style="color: hsl(70, 90%, 50%)">Contrast 70 90 50</td>
+		    
+			<td style="color: hsl(70, 100%, 50%)">Contrast 70 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(80, 50%, 50%)">Contrast 80 50 50</td>
+		    
+			<td style="color: hsl(80, 60%, 50%)">Contrast 80 60 50</td>
+		    
+			<td style="color: hsl(80, 70%, 50%)">Contrast 80 70 50</td>
+		    
+			<td style="color: hsl(80, 80%, 50%)">Contrast 80 80 50</td>
+		    
+			<td style="color: hsl(80, 90%, 50%)">Contrast 80 90 50</td>
+		    
+			<td style="color: hsl(80, 100%, 50%)">Contrast 80 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(90, 50%, 50%)">Contrast 90 50 50</td>
+		    
+			<td style="color: hsl(90, 60%, 50%)">Contrast 90 60 50</td>
+		    
+			<td style="color: hsl(90, 70%, 50%)">Contrast 90 70 50</td>
+		    
+			<td style="color: hsl(90, 80%, 50%)">Contrast 90 80 50</td>
+		    
+			<td style="color: hsl(90, 90%, 50%)">Contrast 90 90 50</td>
+		    
+			<td style="color: hsl(90, 100%, 50%)">Contrast 90 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(100, 50%, 50%)">Contrast 100 50 50</td>
+		    
+			<td style="color: hsl(100, 60%, 50%)">Contrast 100 60 50</td>
+		    
+			<td style="color: hsl(100, 70%, 50%)">Contrast 100 70 50</td>
+		    
+			<td style="color: hsl(100, 80%, 50%)">Contrast 100 80 50</td>
+		    
+			<td style="color: hsl(100, 90%, 50%)">Contrast 100 90 50</td>
+		    
+			<td style="color: hsl(100, 100%, 50%)">Contrast 100 100 50</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(110, 50%, 50%)">Contrast 110 50 50</td>
+		    
+			<td style="color: hsl(110, 60%, 50%)">Contrast 110 60 50</td>
+		    
+			<td style="color: hsl(110, 70%, 50%)">Contrast 110 70 50</td>
+		    
+			<td style="color: hsl(110, 80%, 50%)">Contrast 110 80 50</td>
+		    
+			<td style="color: hsl(110, 90%, 50%)">Contrast 110 90 50</td>
+		    
+			<td style="color: hsl(110, 100%, 50%)">Contrast 110 100 50</td>
+		    
+		</tr>
+	    
+	
+	    
+		<tr>
+		    
+			<td style="color: hsl(30, 50%, 60%)">Contrast 30 50 60</td>
+		    
+			<td style="color: hsl(30, 60%, 60%)">Contrast 30 60 60</td>
+		    
+			<td style="color: hsl(30, 70%, 60%)">Contrast 30 70 60</td>
+		    
+			<td style="color: hsl(30, 80%, 60%)">Contrast 30 80 60</td>
+		    
+			<td style="color: hsl(30, 90%, 60%)">Contrast 30 90 60</td>
+		    
+			<td style="color: hsl(30, 100%, 60%)">Contrast 30 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(40, 50%, 60%)">Contrast 40 50 60</td>
+		    
+			<td style="color: hsl(40, 60%, 60%)">Contrast 40 60 60</td>
+		    
+			<td style="color: hsl(40, 70%, 60%)">Contrast 40 70 60</td>
+		    
+			<td style="color: hsl(40, 80%, 60%)">Contrast 40 80 60</td>
+		    
+			<td style="color: hsl(40, 90%, 60%)">Contrast 40 90 60</td>
+		    
+			<td style="color: hsl(40, 100%, 60%)">Contrast 40 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(50, 50%, 60%)">Contrast 50 50 60</td>
+		    
+			<td style="color: hsl(50, 60%, 60%)">Contrast 50 60 60</td>
+		    
+			<td style="color: hsl(50, 70%, 60%)">Contrast 50 70 60</td>
+		    
+			<td style="color: hsl(50, 80%, 60%)">Contrast 50 80 60</td>
+		    
+			<td style="color: hsl(50, 90%, 60%)">Contrast 50 90 60</td>
+		    
+			<td style="color: hsl(50, 100%, 60%)">Contrast 50 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(60, 50%, 60%)">Contrast 60 50 60</td>
+		    
+			<td style="color: hsl(60, 60%, 60%)">Contrast 60 60 60</td>
+		    
+			<td style="color: hsl(60, 70%, 60%)">Contrast 60 70 60</td>
+		    
+			<td style="color: hsl(60, 80%, 60%)">Contrast 60 80 60</td>
+		    
+			<td style="color: hsl(60, 90%, 60%)">Contrast 60 90 60</td>
+		    
+			<td style="color: hsl(60, 100%, 60%)">Contrast 60 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(70, 50%, 60%)">Contrast 70 50 60</td>
+		    
+			<td style="color: hsl(70, 60%, 60%)">Contrast 70 60 60</td>
+		    
+			<td style="color: hsl(70, 70%, 60%)">Contrast 70 70 60</td>
+		    
+			<td style="color: hsl(70, 80%, 60%)">Contrast 70 80 60</td>
+		    
+			<td style="color: hsl(70, 90%, 60%)">Contrast 70 90 60</td>
+		    
+			<td style="color: hsl(70, 100%, 60%)">Contrast 70 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(80, 50%, 60%)">Contrast 80 50 60</td>
+		    
+			<td style="color: hsl(80, 60%, 60%)">Contrast 80 60 60</td>
+		    
+			<td style="color: hsl(80, 70%, 60%)">Contrast 80 70 60</td>
+		    
+			<td style="color: hsl(80, 80%, 60%)">Contrast 80 80 60</td>
+		    
+			<td style="color: hsl(80, 90%, 60%)">Contrast 80 90 60</td>
+		    
+			<td style="color: hsl(80, 100%, 60%)">Contrast 80 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(90, 50%, 60%)">Contrast 90 50 60</td>
+		    
+			<td style="color: hsl(90, 60%, 60%)">Contrast 90 60 60</td>
+		    
+			<td style="color: hsl(90, 70%, 60%)">Contrast 90 70 60</td>
+		    
+			<td style="color: hsl(90, 80%, 60%)">Contrast 90 80 60</td>
+		    
+			<td style="color: hsl(90, 90%, 60%)">Contrast 90 90 60</td>
+		    
+			<td style="color: hsl(90, 100%, 60%)">Contrast 90 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(100, 50%, 60%)">Contrast 100 50 60</td>
+		    
+			<td style="color: hsl(100, 60%, 60%)">Contrast 100 60 60</td>
+		    
+			<td style="color: hsl(100, 70%, 60%)">Contrast 100 70 60</td>
+		    
+			<td style="color: hsl(100, 80%, 60%)">Contrast 100 80 60</td>
+		    
+			<td style="color: hsl(100, 90%, 60%)">Contrast 100 90 60</td>
+		    
+			<td style="color: hsl(100, 100%, 60%)">Contrast 100 100 60</td>
+		    
+		</tr>
+	    
+		<tr>
+		    
+			<td style="color: hsl(110, 50%, 60%)">Contrast 110 50 60</td>
+		    
+			<td style="color: hsl(110, 60%, 60%)">Contrast 110 60 60</td>
+		    
+			<td style="color: hsl(110, 70%, 60%)">Contrast 110 70 60</td>
+		    
+			<td style="color: hsl(110, 80%, 60%)">Contrast 110 80 60</td>
+		    
+			<td style="color: hsl(110, 90%, 60%)">Contrast 110 90 60</td>
+		    
+			<td style="color: hsl(110, 100%, 60%)">Contrast 110 100 60</td>
+		    
+		</tr>
+	    
+	
+    </table>
+
+
+    <h2 id="foreground-hue">Foreground Hue</h2>
     
 	<h3 style="color: hsl(0, 100%, 50%)">Hue 0</h3>
 	
@@ -1313,7 +3028,8 @@
 	
     
 
-    <h2>Hue on inverted background</h2>
+
+    <h2 id="foreground-hue-on-nverted">Foreground Hue on inverted background</h2>
     
 	<h3 style="color: hsl(0, 100%, 50%)">Hue 0</h3>
 	<div class="inverted-color-gray-20" style="padding: 10px">
@@ -2035,1666 +3751,8 @@
 	    
 	</div>
     
+    <p></p>
 
-    <h2>Color Contrast Table</h2>
-    <table class="table" style="font-size: 13pt; text-align: center">
-	<tr style="color: #fff">
-	    <td style="background: #fff">Contrast</td>
-	    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(30, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(60, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(90, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(120, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(150, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(180, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(210, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(240, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(270, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(300, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(330, 90%, 50%)">Contrast</td>
-	    
-	</tr>
-	<tr style="color: #000">
-	    <td style="background: #fff">Contrast</td>
-	    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(30, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(60, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(90, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(120, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(150, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(180, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(210, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(240, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(270, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(300, 90%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(330, 90%, 50%)">Contrast</td>
-	    
-	</tr>
-	
-	    <tr style="color: hsl(0, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(30, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(60, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(90, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(120, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(150, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(180, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(210, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(240, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(270, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(300, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(330, 90%, 50%)">
-		<td style="background: #fff">Contrast</td>
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(30, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(60, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(90, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(120, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(150, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(180, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(210, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(240, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(270, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(300, 90%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(330, 90%, 50%)">Contrast</td>
-		
-	    </tr>
-	
-    </table>
-
-    <h2>Luminosity Contrast Table</h2>
-    <table class="table" style="font-size: 13pt; text-align: center">
-	<tr style="color: #fff">
-	    <td></td>
-	    
-		<td style="background: hsl(0, 0%, 0%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 10%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 30%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 40%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 60%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 70%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 80%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 90%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 100%)">Contrast</td>
-	    
-	</tr>
-	<tr style="color: #000">
-	    <td></td>
-	    
-		<td style="background: hsl(0, 0%, 0%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 10%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 20%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 30%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 40%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 50%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 60%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 70%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 80%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 90%)">Contrast</td>
-	    
-		<td style="background: hsl(0, 0%, 100%)">Contrast</td>
-	    
-	</tr>
-	
-	    <tr style="color: hsl(0, 90%, 50%)">
-		<td>0</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(20, 90%, 50%)">
-		<td>20</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(40, 90%, 50%)">
-		<td>40</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(60, 90%, 50%)">
-		<td>60</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(80, 90%, 50%)">
-		<td>80</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(100, 90%, 50%)">
-		<td>100</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(120, 90%, 50%)">
-		<td>120</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(140, 90%, 50%)">
-		<td>140</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(160, 90%, 50%)">
-		<td>160</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(180, 90%, 50%)">
-		<td>180</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(200, 90%, 50%)">
-		<td>200</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(220, 90%, 50%)">
-		<td>220</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(240, 90%, 50%)">
-		<td>240</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(260, 90%, 50%)">
-		<td>260</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(280, 90%, 50%)">
-		<td>280</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(300, 90%, 50%)">
-		<td>300</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(320, 90%, 50%)">
-		<td>320</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-	    <tr style="color: hsl(340, 90%, 50%)">
-		<td>340</td>
-		
-		    <td style="background: hsl(0, 0%, 0%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 10%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 30%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 40%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 50%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 60%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 70%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 80%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 90%)">Contrast</td>
-		
-		    <td style="background: hsl(0, 0%, 100%)">Contrast</td>
-		
-	    </tr>
-	
-    </table>
-
-    <h2>Blue Table</h2>
-    <table class="table" style="font-size: 13pt; text-align: center">
-	
-	    
-		<tr>
-		    
-			<td style="color: hsl(200, 50%, 40%)">Contrast 200 50 40</td>
-		    
-			<td style="color: hsl(200, 60%, 40%)">Contrast 200 60 40</td>
-		    
-			<td style="color: hsl(200, 70%, 40%)">Contrast 200 70 40</td>
-		    
-			<td style="color: hsl(200, 80%, 40%)">Contrast 200 80 40</td>
-		    
-			<td style="color: hsl(200, 90%, 40%)">Contrast 200 90 40</td>
-		    
-			<td style="color: hsl(200, 100%, 40%)">Contrast 200 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(210, 50%, 40%)">Contrast 210 50 40</td>
-		    
-			<td style="color: hsl(210, 60%, 40%)">Contrast 210 60 40</td>
-		    
-			<td style="color: hsl(210, 70%, 40%)">Contrast 210 70 40</td>
-		    
-			<td style="color: hsl(210, 80%, 40%)">Contrast 210 80 40</td>
-		    
-			<td style="color: hsl(210, 90%, 40%)">Contrast 210 90 40</td>
-		    
-			<td style="color: hsl(210, 100%, 40%)">Contrast 210 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(220, 50%, 40%)">Contrast 220 50 40</td>
-		    
-			<td style="color: hsl(220, 60%, 40%)">Contrast 220 60 40</td>
-		    
-			<td style="color: hsl(220, 70%, 40%)">Contrast 220 70 40</td>
-		    
-			<td style="color: hsl(220, 80%, 40%)">Contrast 220 80 40</td>
-		    
-			<td style="color: hsl(220, 90%, 40%)">Contrast 220 90 40</td>
-		    
-			<td style="color: hsl(220, 100%, 40%)">Contrast 220 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(230, 50%, 40%)">Contrast 230 50 40</td>
-		    
-			<td style="color: hsl(230, 60%, 40%)">Contrast 230 60 40</td>
-		    
-			<td style="color: hsl(230, 70%, 40%)">Contrast 230 70 40</td>
-		    
-			<td style="color: hsl(230, 80%, 40%)">Contrast 230 80 40</td>
-		    
-			<td style="color: hsl(230, 90%, 40%)">Contrast 230 90 40</td>
-		    
-			<td style="color: hsl(230, 100%, 40%)">Contrast 230 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(240, 50%, 40%)">Contrast 240 50 40</td>
-		    
-			<td style="color: hsl(240, 60%, 40%)">Contrast 240 60 40</td>
-		    
-			<td style="color: hsl(240, 70%, 40%)">Contrast 240 70 40</td>
-		    
-			<td style="color: hsl(240, 80%, 40%)">Contrast 240 80 40</td>
-		    
-			<td style="color: hsl(240, 90%, 40%)">Contrast 240 90 40</td>
-		    
-			<td style="color: hsl(240, 100%, 40%)">Contrast 240 100 40</td>
-		    
-		</tr>
-	    
-	
-	    
-		<tr>
-		    
-			<td style="color: hsl(200, 50%, 50%)">Contrast 200 50 50</td>
-		    
-			<td style="color: hsl(200, 60%, 50%)">Contrast 200 60 50</td>
-		    
-			<td style="color: hsl(200, 70%, 50%)">Contrast 200 70 50</td>
-		    
-			<td style="color: hsl(200, 80%, 50%)">Contrast 200 80 50</td>
-		    
-			<td style="color: hsl(200, 90%, 50%)">Contrast 200 90 50</td>
-		    
-			<td style="color: hsl(200, 100%, 50%)">Contrast 200 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(210, 50%, 50%)">Contrast 210 50 50</td>
-		    
-			<td style="color: hsl(210, 60%, 50%)">Contrast 210 60 50</td>
-		    
-			<td style="color: hsl(210, 70%, 50%)">Contrast 210 70 50</td>
-		    
-			<td style="color: hsl(210, 80%, 50%)">Contrast 210 80 50</td>
-		    
-			<td style="color: hsl(210, 90%, 50%)">Contrast 210 90 50</td>
-		    
-			<td style="color: hsl(210, 100%, 50%)">Contrast 210 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(220, 50%, 50%)">Contrast 220 50 50</td>
-		    
-			<td style="color: hsl(220, 60%, 50%)">Contrast 220 60 50</td>
-		    
-			<td style="color: hsl(220, 70%, 50%)">Contrast 220 70 50</td>
-		    
-			<td style="color: hsl(220, 80%, 50%)">Contrast 220 80 50</td>
-		    
-			<td style="color: hsl(220, 90%, 50%)">Contrast 220 90 50</td>
-		    
-			<td style="color: hsl(220, 100%, 50%)">Contrast 220 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(230, 50%, 50%)">Contrast 230 50 50</td>
-		    
-			<td style="color: hsl(230, 60%, 50%)">Contrast 230 60 50</td>
-		    
-			<td style="color: hsl(230, 70%, 50%)">Contrast 230 70 50</td>
-		    
-			<td style="color: hsl(230, 80%, 50%)">Contrast 230 80 50</td>
-		    
-			<td style="color: hsl(230, 90%, 50%)">Contrast 230 90 50</td>
-		    
-			<td style="color: hsl(230, 100%, 50%)">Contrast 230 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(240, 50%, 50%)">Contrast 240 50 50</td>
-		    
-			<td style="color: hsl(240, 60%, 50%)">Contrast 240 60 50</td>
-		    
-			<td style="color: hsl(240, 70%, 50%)">Contrast 240 70 50</td>
-		    
-			<td style="color: hsl(240, 80%, 50%)">Contrast 240 80 50</td>
-		    
-			<td style="color: hsl(240, 90%, 50%)">Contrast 240 90 50</td>
-		    
-			<td style="color: hsl(240, 100%, 50%)">Contrast 240 100 50</td>
-		    
-		</tr>
-	    
-	
-	    
-		<tr>
-		    
-			<td style="color: hsl(200, 50%, 60%)">Contrast 200 50 60</td>
-		    
-			<td style="color: hsl(200, 60%, 60%)">Contrast 200 60 60</td>
-		    
-			<td style="color: hsl(200, 70%, 60%)">Contrast 200 70 60</td>
-		    
-			<td style="color: hsl(200, 80%, 60%)">Contrast 200 80 60</td>
-		    
-			<td style="color: hsl(200, 90%, 60%)">Contrast 200 90 60</td>
-		    
-			<td style="color: hsl(200, 100%, 60%)">Contrast 200 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(210, 50%, 60%)">Contrast 210 50 60</td>
-		    
-			<td style="color: hsl(210, 60%, 60%)">Contrast 210 60 60</td>
-		    
-			<td style="color: hsl(210, 70%, 60%)">Contrast 210 70 60</td>
-		    
-			<td style="color: hsl(210, 80%, 60%)">Contrast 210 80 60</td>
-		    
-			<td style="color: hsl(210, 90%, 60%)">Contrast 210 90 60</td>
-		    
-			<td style="color: hsl(210, 100%, 60%)">Contrast 210 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(220, 50%, 60%)">Contrast 220 50 60</td>
-		    
-			<td style="color: hsl(220, 60%, 60%)">Contrast 220 60 60</td>
-		    
-			<td style="color: hsl(220, 70%, 60%)">Contrast 220 70 60</td>
-		    
-			<td style="color: hsl(220, 80%, 60%)">Contrast 220 80 60</td>
-		    
-			<td style="color: hsl(220, 90%, 60%)">Contrast 220 90 60</td>
-		    
-			<td style="color: hsl(220, 100%, 60%)">Contrast 220 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(230, 50%, 60%)">Contrast 230 50 60</td>
-		    
-			<td style="color: hsl(230, 60%, 60%)">Contrast 230 60 60</td>
-		    
-			<td style="color: hsl(230, 70%, 60%)">Contrast 230 70 60</td>
-		    
-			<td style="color: hsl(230, 80%, 60%)">Contrast 230 80 60</td>
-		    
-			<td style="color: hsl(230, 90%, 60%)">Contrast 230 90 60</td>
-		    
-			<td style="color: hsl(230, 100%, 60%)">Contrast 230 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(240, 50%, 60%)">Contrast 240 50 60</td>
-		    
-			<td style="color: hsl(240, 60%, 60%)">Contrast 240 60 60</td>
-		    
-			<td style="color: hsl(240, 70%, 60%)">Contrast 240 70 60</td>
-		    
-			<td style="color: hsl(240, 80%, 60%)">Contrast 240 80 60</td>
-		    
-			<td style="color: hsl(240, 90%, 60%)">Contrast 240 90 60</td>
-		    
-			<td style="color: hsl(240, 100%, 60%)">Contrast 240 100 60</td>
-		    
-		</tr>
-	    
-	
-    </table>
-
-    <h2>Green Table</h2>
-    <table class="table inverted-color-gray-20" style="font-size: 13pt; text-align: center">
-	
-	    
-		<tr>
-		    
-			<td style="color: hsl(30, 50%, 40%)">Contrast 30 50 40</td>
-		    
-			<td style="color: hsl(30, 60%, 40%)">Contrast 30 60 40</td>
-		    
-			<td style="color: hsl(30, 70%, 40%)">Contrast 30 70 40</td>
-		    
-			<td style="color: hsl(30, 80%, 40%)">Contrast 30 80 40</td>
-		    
-			<td style="color: hsl(30, 90%, 40%)">Contrast 30 90 40</td>
-		    
-			<td style="color: hsl(30, 100%, 40%)">Contrast 30 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(40, 50%, 40%)">Contrast 40 50 40</td>
-		    
-			<td style="color: hsl(40, 60%, 40%)">Contrast 40 60 40</td>
-		    
-			<td style="color: hsl(40, 70%, 40%)">Contrast 40 70 40</td>
-		    
-			<td style="color: hsl(40, 80%, 40%)">Contrast 40 80 40</td>
-		    
-			<td style="color: hsl(40, 90%, 40%)">Contrast 40 90 40</td>
-		    
-			<td style="color: hsl(40, 100%, 40%)">Contrast 40 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(50, 50%, 40%)">Contrast 50 50 40</td>
-		    
-			<td style="color: hsl(50, 60%, 40%)">Contrast 50 60 40</td>
-		    
-			<td style="color: hsl(50, 70%, 40%)">Contrast 50 70 40</td>
-		    
-			<td style="color: hsl(50, 80%, 40%)">Contrast 50 80 40</td>
-		    
-			<td style="color: hsl(50, 90%, 40%)">Contrast 50 90 40</td>
-		    
-			<td style="color: hsl(50, 100%, 40%)">Contrast 50 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(60, 50%, 40%)">Contrast 60 50 40</td>
-		    
-			<td style="color: hsl(60, 60%, 40%)">Contrast 60 60 40</td>
-		    
-			<td style="color: hsl(60, 70%, 40%)">Contrast 60 70 40</td>
-		    
-			<td style="color: hsl(60, 80%, 40%)">Contrast 60 80 40</td>
-		    
-			<td style="color: hsl(60, 90%, 40%)">Contrast 60 90 40</td>
-		    
-			<td style="color: hsl(60, 100%, 40%)">Contrast 60 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(70, 50%, 40%)">Contrast 70 50 40</td>
-		    
-			<td style="color: hsl(70, 60%, 40%)">Contrast 70 60 40</td>
-		    
-			<td style="color: hsl(70, 70%, 40%)">Contrast 70 70 40</td>
-		    
-			<td style="color: hsl(70, 80%, 40%)">Contrast 70 80 40</td>
-		    
-			<td style="color: hsl(70, 90%, 40%)">Contrast 70 90 40</td>
-		    
-			<td style="color: hsl(70, 100%, 40%)">Contrast 70 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(80, 50%, 40%)">Contrast 80 50 40</td>
-		    
-			<td style="color: hsl(80, 60%, 40%)">Contrast 80 60 40</td>
-		    
-			<td style="color: hsl(80, 70%, 40%)">Contrast 80 70 40</td>
-		    
-			<td style="color: hsl(80, 80%, 40%)">Contrast 80 80 40</td>
-		    
-			<td style="color: hsl(80, 90%, 40%)">Contrast 80 90 40</td>
-		    
-			<td style="color: hsl(80, 100%, 40%)">Contrast 80 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(90, 50%, 40%)">Contrast 90 50 40</td>
-		    
-			<td style="color: hsl(90, 60%, 40%)">Contrast 90 60 40</td>
-		    
-			<td style="color: hsl(90, 70%, 40%)">Contrast 90 70 40</td>
-		    
-			<td style="color: hsl(90, 80%, 40%)">Contrast 90 80 40</td>
-		    
-			<td style="color: hsl(90, 90%, 40%)">Contrast 90 90 40</td>
-		    
-			<td style="color: hsl(90, 100%, 40%)">Contrast 90 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(100, 50%, 40%)">Contrast 100 50 40</td>
-		    
-			<td style="color: hsl(100, 60%, 40%)">Contrast 100 60 40</td>
-		    
-			<td style="color: hsl(100, 70%, 40%)">Contrast 100 70 40</td>
-		    
-			<td style="color: hsl(100, 80%, 40%)">Contrast 100 80 40</td>
-		    
-			<td style="color: hsl(100, 90%, 40%)">Contrast 100 90 40</td>
-		    
-			<td style="color: hsl(100, 100%, 40%)">Contrast 100 100 40</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(110, 50%, 40%)">Contrast 110 50 40</td>
-		    
-			<td style="color: hsl(110, 60%, 40%)">Contrast 110 60 40</td>
-		    
-			<td style="color: hsl(110, 70%, 40%)">Contrast 110 70 40</td>
-		    
-			<td style="color: hsl(110, 80%, 40%)">Contrast 110 80 40</td>
-		    
-			<td style="color: hsl(110, 90%, 40%)">Contrast 110 90 40</td>
-		    
-			<td style="color: hsl(110, 100%, 40%)">Contrast 110 100 40</td>
-		    
-		</tr>
-	    
-	
-	    
-		<tr>
-		    
-			<td style="color: hsl(30, 50%, 50%)">Contrast 30 50 50</td>
-		    
-			<td style="color: hsl(30, 60%, 50%)">Contrast 30 60 50</td>
-		    
-			<td style="color: hsl(30, 70%, 50%)">Contrast 30 70 50</td>
-		    
-			<td style="color: hsl(30, 80%, 50%)">Contrast 30 80 50</td>
-		    
-			<td style="color: hsl(30, 90%, 50%)">Contrast 30 90 50</td>
-		    
-			<td style="color: hsl(30, 100%, 50%)">Contrast 30 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(40, 50%, 50%)">Contrast 40 50 50</td>
-		    
-			<td style="color: hsl(40, 60%, 50%)">Contrast 40 60 50</td>
-		    
-			<td style="color: hsl(40, 70%, 50%)">Contrast 40 70 50</td>
-		    
-			<td style="color: hsl(40, 80%, 50%)">Contrast 40 80 50</td>
-		    
-			<td style="color: hsl(40, 90%, 50%)">Contrast 40 90 50</td>
-		    
-			<td style="color: hsl(40, 100%, 50%)">Contrast 40 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(50, 50%, 50%)">Contrast 50 50 50</td>
-		    
-			<td style="color: hsl(50, 60%, 50%)">Contrast 50 60 50</td>
-		    
-			<td style="color: hsl(50, 70%, 50%)">Contrast 50 70 50</td>
-		    
-			<td style="color: hsl(50, 80%, 50%)">Contrast 50 80 50</td>
-		    
-			<td style="color: hsl(50, 90%, 50%)">Contrast 50 90 50</td>
-		    
-			<td style="color: hsl(50, 100%, 50%)">Contrast 50 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(60, 50%, 50%)">Contrast 60 50 50</td>
-		    
-			<td style="color: hsl(60, 60%, 50%)">Contrast 60 60 50</td>
-		    
-			<td style="color: hsl(60, 70%, 50%)">Contrast 60 70 50</td>
-		    
-			<td style="color: hsl(60, 80%, 50%)">Contrast 60 80 50</td>
-		    
-			<td style="color: hsl(60, 90%, 50%)">Contrast 60 90 50</td>
-		    
-			<td style="color: hsl(60, 100%, 50%)">Contrast 60 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(70, 50%, 50%)">Contrast 70 50 50</td>
-		    
-			<td style="color: hsl(70, 60%, 50%)">Contrast 70 60 50</td>
-		    
-			<td style="color: hsl(70, 70%, 50%)">Contrast 70 70 50</td>
-		    
-			<td style="color: hsl(70, 80%, 50%)">Contrast 70 80 50</td>
-		    
-			<td style="color: hsl(70, 90%, 50%)">Contrast 70 90 50</td>
-		    
-			<td style="color: hsl(70, 100%, 50%)">Contrast 70 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(80, 50%, 50%)">Contrast 80 50 50</td>
-		    
-			<td style="color: hsl(80, 60%, 50%)">Contrast 80 60 50</td>
-		    
-			<td style="color: hsl(80, 70%, 50%)">Contrast 80 70 50</td>
-		    
-			<td style="color: hsl(80, 80%, 50%)">Contrast 80 80 50</td>
-		    
-			<td style="color: hsl(80, 90%, 50%)">Contrast 80 90 50</td>
-		    
-			<td style="color: hsl(80, 100%, 50%)">Contrast 80 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(90, 50%, 50%)">Contrast 90 50 50</td>
-		    
-			<td style="color: hsl(90, 60%, 50%)">Contrast 90 60 50</td>
-		    
-			<td style="color: hsl(90, 70%, 50%)">Contrast 90 70 50</td>
-		    
-			<td style="color: hsl(90, 80%, 50%)">Contrast 90 80 50</td>
-		    
-			<td style="color: hsl(90, 90%, 50%)">Contrast 90 90 50</td>
-		    
-			<td style="color: hsl(90, 100%, 50%)">Contrast 90 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(100, 50%, 50%)">Contrast 100 50 50</td>
-		    
-			<td style="color: hsl(100, 60%, 50%)">Contrast 100 60 50</td>
-		    
-			<td style="color: hsl(100, 70%, 50%)">Contrast 100 70 50</td>
-		    
-			<td style="color: hsl(100, 80%, 50%)">Contrast 100 80 50</td>
-		    
-			<td style="color: hsl(100, 90%, 50%)">Contrast 100 90 50</td>
-		    
-			<td style="color: hsl(100, 100%, 50%)">Contrast 100 100 50</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(110, 50%, 50%)">Contrast 110 50 50</td>
-		    
-			<td style="color: hsl(110, 60%, 50%)">Contrast 110 60 50</td>
-		    
-			<td style="color: hsl(110, 70%, 50%)">Contrast 110 70 50</td>
-		    
-			<td style="color: hsl(110, 80%, 50%)">Contrast 110 80 50</td>
-		    
-			<td style="color: hsl(110, 90%, 50%)">Contrast 110 90 50</td>
-		    
-			<td style="color: hsl(110, 100%, 50%)">Contrast 110 100 50</td>
-		    
-		</tr>
-	    
-	
-	    
-		<tr>
-		    
-			<td style="color: hsl(30, 50%, 60%)">Contrast 30 50 60</td>
-		    
-			<td style="color: hsl(30, 60%, 60%)">Contrast 30 60 60</td>
-		    
-			<td style="color: hsl(30, 70%, 60%)">Contrast 30 70 60</td>
-		    
-			<td style="color: hsl(30, 80%, 60%)">Contrast 30 80 60</td>
-		    
-			<td style="color: hsl(30, 90%, 60%)">Contrast 30 90 60</td>
-		    
-			<td style="color: hsl(30, 100%, 60%)">Contrast 30 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(40, 50%, 60%)">Contrast 40 50 60</td>
-		    
-			<td style="color: hsl(40, 60%, 60%)">Contrast 40 60 60</td>
-		    
-			<td style="color: hsl(40, 70%, 60%)">Contrast 40 70 60</td>
-		    
-			<td style="color: hsl(40, 80%, 60%)">Contrast 40 80 60</td>
-		    
-			<td style="color: hsl(40, 90%, 60%)">Contrast 40 90 60</td>
-		    
-			<td style="color: hsl(40, 100%, 60%)">Contrast 40 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(50, 50%, 60%)">Contrast 50 50 60</td>
-		    
-			<td style="color: hsl(50, 60%, 60%)">Contrast 50 60 60</td>
-		    
-			<td style="color: hsl(50, 70%, 60%)">Contrast 50 70 60</td>
-		    
-			<td style="color: hsl(50, 80%, 60%)">Contrast 50 80 60</td>
-		    
-			<td style="color: hsl(50, 90%, 60%)">Contrast 50 90 60</td>
-		    
-			<td style="color: hsl(50, 100%, 60%)">Contrast 50 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(60, 50%, 60%)">Contrast 60 50 60</td>
-		    
-			<td style="color: hsl(60, 60%, 60%)">Contrast 60 60 60</td>
-		    
-			<td style="color: hsl(60, 70%, 60%)">Contrast 60 70 60</td>
-		    
-			<td style="color: hsl(60, 80%, 60%)">Contrast 60 80 60</td>
-		    
-			<td style="color: hsl(60, 90%, 60%)">Contrast 60 90 60</td>
-		    
-			<td style="color: hsl(60, 100%, 60%)">Contrast 60 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(70, 50%, 60%)">Contrast 70 50 60</td>
-		    
-			<td style="color: hsl(70, 60%, 60%)">Contrast 70 60 60</td>
-		    
-			<td style="color: hsl(70, 70%, 60%)">Contrast 70 70 60</td>
-		    
-			<td style="color: hsl(70, 80%, 60%)">Contrast 70 80 60</td>
-		    
-			<td style="color: hsl(70, 90%, 60%)">Contrast 70 90 60</td>
-		    
-			<td style="color: hsl(70, 100%, 60%)">Contrast 70 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(80, 50%, 60%)">Contrast 80 50 60</td>
-		    
-			<td style="color: hsl(80, 60%, 60%)">Contrast 80 60 60</td>
-		    
-			<td style="color: hsl(80, 70%, 60%)">Contrast 80 70 60</td>
-		    
-			<td style="color: hsl(80, 80%, 60%)">Contrast 80 80 60</td>
-		    
-			<td style="color: hsl(80, 90%, 60%)">Contrast 80 90 60</td>
-		    
-			<td style="color: hsl(80, 100%, 60%)">Contrast 80 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(90, 50%, 60%)">Contrast 90 50 60</td>
-		    
-			<td style="color: hsl(90, 60%, 60%)">Contrast 90 60 60</td>
-		    
-			<td style="color: hsl(90, 70%, 60%)">Contrast 90 70 60</td>
-		    
-			<td style="color: hsl(90, 80%, 60%)">Contrast 90 80 60</td>
-		    
-			<td style="color: hsl(90, 90%, 60%)">Contrast 90 90 60</td>
-		    
-			<td style="color: hsl(90, 100%, 60%)">Contrast 90 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(100, 50%, 60%)">Contrast 100 50 60</td>
-		    
-			<td style="color: hsl(100, 60%, 60%)">Contrast 100 60 60</td>
-		    
-			<td style="color: hsl(100, 70%, 60%)">Contrast 100 70 60</td>
-		    
-			<td style="color: hsl(100, 80%, 60%)">Contrast 100 80 60</td>
-		    
-			<td style="color: hsl(100, 90%, 60%)">Contrast 100 90 60</td>
-		    
-			<td style="color: hsl(100, 100%, 60%)">Contrast 100 100 60</td>
-		    
-		</tr>
-	    
-		<tr>
-		    
-			<td style="color: hsl(110, 50%, 60%)">Contrast 110 50 60</td>
-		    
-			<td style="color: hsl(110, 60%, 60%)">Contrast 110 60 60</td>
-		    
-			<td style="color: hsl(110, 70%, 60%)">Contrast 110 70 60</td>
-		    
-			<td style="color: hsl(110, 80%, 60%)">Contrast 110 80 60</td>
-		    
-			<td style="color: hsl(110, 90%, 60%)">Contrast 110 90 60</td>
-		    
-			<td style="color: hsl(110, 100%, 60%)">Contrast 110 100 60</td>
-		    
-		</tr>
-	    
-	
-    </table>
 
 	</div>
 	<hr class="sr-only" />
@@ -3706,7 +3764,10 @@
                     <li class="pull-right"><a href="#page-top" data-spy="scroll"><span class="fa fa-left fa-arrow-up"></span> Back to top</a></li>
                 </ul>
 		<div class="col-sm-16">
-                    <p>CopyRight © 2016 Demo CSS</p>
+                    <p>Copyright © 2016 <a href="https://github.com/FabriceSalvaire/css-demo">CSS Demo</a>
+			/ <a href="https://github.com/FabriceSalvaire" itemscope itemtype="http://schema.org/People">
+			<span itemprop="author">Fabrice Salvaire</span></a>
+			/ <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC by-nc-na</a></p>
 		</div>
             </div>
 	</footer>
