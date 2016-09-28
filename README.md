@@ -7,11 +7,11 @@ This demo follows good design practices like colour contrast.
 First install NPM packages:
 
     npm install
-   
+
 and Bower packages:
 
     bower install
-    
+
 then run Gulp to generate the site and open it in your browser:
 
-   gulp
+    gulp
