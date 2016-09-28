@@ -19,7 +19,7 @@ var project_path = {
     css: project_root + '/static/css',
     html: project_root + '/html',
     sass: project_root + '/private/sass',
-    template: project_root + '/template',
+    template: project_root + '/templates',
 };
 
 var project_patterns = {
