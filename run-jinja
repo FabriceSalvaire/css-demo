@@ -14,8 +14,8 @@ environment = Environment(loader = FileSystemLoader('templates', followlinks=Tru
 pages = [os.path.basename(x) for x in glob.glob('templates/[a-z]*.html')]
 
 menus = (
-    {'href': 'typography.html', 'title':'Typography'},
     {'href': 'colour.html', 'title':'Colour'},
+    {'href': 'typography.html', 'title':'Typography'},
 )
 
 for page in pages:
