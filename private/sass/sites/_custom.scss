@@ -75,3 +75,12 @@
 .col-linebreak {
     border-left: 1px dotted $gray-light;
 }
+
+// Overwrite font-weight, else it uses Roboto Thin since there is no Roboto @200
+.jumbotron {
+  p {
+    margin-bottom: ($jumbotron-padding / 2);
+    font-size: $jumbotron-font-size;
+    font-weight: 300; // 200
+  }
+}
