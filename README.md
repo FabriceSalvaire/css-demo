@@ -1,4 +1,4 @@
-This repository contains a [static web site](https://fabricesalvaire.github.io) to demonstrate various CSS settings like typography and colours.
+This repository contains a [static web site](https://fabricesalvaire.github.io/css-demo) to demonstrate various CSS settings like typography and colours.
 
 This demo follows good design practices like colour contrast.
 
