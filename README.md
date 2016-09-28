@@ -10,7 +10,7 @@ It requires Python3 and the Jinja2 template engine as well as a standard web dev
 
 To install Jinja2, run basically:
 
-  pip install jinja2
+    pip install jinja2
 
 Best it is to look for Python Virtual Environment or a package if your are using Linux.
 
