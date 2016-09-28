@@ -1,23 +1,86 @@
 {% extends "_base.html" %}
 
 {% block content %}
-    <h1>Font Size</h1>
-    <h2>Title</h2>
-    {% for i in range(10, 26) %}
-	<p style="font-size: {{ i }}pt">{{ i }} pt Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-    {% endfor %}
+    <h1>Typography</h1>
+    <h2>Table of Contents</h2>
+    <ul>
+	<li><a href="#introduction">Introduction</a></li>
+	<li><a href="#font-size">Font size</a></li>
+	<li><a href="#paragraph">Type Color</a></li>
+    </ul>
+    <h2 id="introduction">Introduction</h2>
+    <p>
+	There is 3 principal types of fonts:
+	<ul>
+	    <li><strong>Sans-Serif</strong> typeface like the one used in this text.</li>
+	    <li><strong>Serif</strong> typeface which have a small line attached to the end of a stroke in a glyph.
+		<p>
+		    It forms a virtual line which help to read the text of a paragraph.<br>
+		    It is well adapted for printed book but it can be less suitable on electronic device where the dpi resolution is limited.
+		</p>
+	    </li>
+	    <li><strong>Monospaced</strong> typeface where all glyphs have the same width, usually a e is shorter than a m.
+		<p>
+		    This typeface is used when an homogeneous character spacing is required, for example to show a source code.
+		</p>
+	    </li>
+	</ul>
+	Additionally, it exists a plenty of fancy fonts, like curvy etc.<br>
+    </p>
+    <p>
+	<strong>Rule: A font must be readable on all devices by everybody.</strong>
+    </p>
+    <p>
+	The main factors that affect the readability of a font are:
+	<ul>
+	    <li>font design</li>
+	    <li>font size</li>
+	    <li>font weight (stroke width)</li>
+	    <li>contrast between the type colour and the background</li>
+	</ul>
+	And these factors which cannot be chosen by the author:
+	<ul>
+	    <li>media resolution (dpi)
+		<p>Which have a large range nowadays.</p>
+	    </li>
+	    <li>anti-aliasing algorithm applied to the font by the raster engine
+		<p>It can be observed with a magnifier tools or using a screenshot.</p>
+	    </li>
+	</ul>
+	<strong>Rule: We have to choose a font, a size (weight) and a contrast which work together on all devices (responsive design).</strong>
+    </p>
+    <p>
+	<strong>Rule: The relative importance of the different parts of the text must be established by a consistent couple of font styles.</strong>
+    </p>
+    <p>
+	<strong>Accessibility Rule: Peoples with visual impairment need a larger font size.</strong>
+	It is mandatory on wide audience site.
+    </p>
+    <h2 id="font-size">Font Size</h2>
+    <div class="panel panel-default">
+	<div class="panel-body">
+	    {% for i in range(8, 26) %}
+		<p style="font-size: {{ i }}pt">{{ i }} pt Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+	    {% endfor %}
+	</div>
+    </div>
 
-    <h2>Paragraph</h2>
-    {% for i in range(10, 18) %}
-	<h3>{{ i }} pt</h3>
-	<p style="font-size: {{ i }}pt">
-	    Eius populus ab incunabulis primis ad usque
-	    pueritiae tempus extremum, quod annis circumcluditur fere trecentis,
-	    circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices
-	    bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex
-	    omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque
-	    vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae
-	    discessit.
-	</p>
-    {% endfor %}
+    <h2 id="paragraph">Paragraph ~ Type Color ~ Gris Typographique</h2>
+    <p><strong>The line height must be chosen judiciously in order to make a nice type color.</strong></p>
+    <div class="panel panel-default">
+	<div class="panel-body">
+	    {% for i in range(8, 18) %}
+		<h3>{{ i }} pt</h3>
+		<p style="font-size: {{ i }}pt">
+		    Eius populus ab incunabulis primis ad usque
+		    pueritiae tempus extremum, quod annis circumcluditur fere trecentis,
+		    circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices
+		    bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex
+		    omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque
+		    vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae
+		    discessit.
+		</p>
+	    {% endfor %}
+	</div>
+    </div>
 {% endblock %}

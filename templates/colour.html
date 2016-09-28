@@ -1,60 +1,54 @@
 {% extends "_base.html" %}
 
 {% block content %}
-    <h1>Color</h1>
-    <h2>Title</h2>
-    {% for i in range(0, 100, 10) %}
-	<p style="font-size: 12pt" class="color-gray-{{ i }}">
-	    {{ i }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-    {% endfor %}
+    <h1>Colour</h1>
 
-    <h2>Paragraph</h2>
-    {% for i in range(0, 100, 10) %}
-	<p style="font-size: 12pt" class="color-gray-{{ i }}">{{ i }}%
-	    Eius populus ab incunabulis primis ad usque
-	    pueritiae tempus extremum, quod annis circumcluditur fere trecentis,
-	    circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices
-	    bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex
-	    omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque
-	    vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae
-	    discessit.
-	</p>
-    {% endfor %}
 
-    <h2>Background</h2>
-    {% for i in range(0, 100, 10) %}
-	<h3>background {{ i }}%</h3>
-	<div class="inverted-color-gray-{{ i }}" style="padding: 10px">
-	    {% for j in range(0, 110, 10) %}
-		{% if  (i-j)|abs > 20 %}
-		    <p style="font-size: 12pt" class="color-gray-{{ j }} ">
-			{{ j }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-		{% endif %}
-	    {% endfor %}
-	</div>
-    {% endfor %}
+    <h2>Table of Contents</h2>
+    <ul>
+	<li><a href="#introduction">Introduction</a></li>
+	<li><a href="#color-contrast-table">Color Contrast Table</a></li>
+	<li><a href="#luminosity-contrast-table">Luminosity Contrast Table</a></li>
+	<li><a href="#foreground-gray-level">Foreground Gray Level</a></li>
+	<li><a href="#background-gray-level">Background Gray Level</a></li>
+	<li><a href="#blue-table">Blue Foreground Table</a></li>
+	<li><a href="#dark-table">Dark Background Table</a></li>
+	<li><a href="#foreground-hue">Foreground Hue</a></li>
+	<li><a href="#foreground-hue-on-nverted">Foreground Hue on inverted background</a></li>
+    </ul>
 
-    <h2>Hue</h2>
-    {% for hue in range(0, 360, 10) %}
-	<h3 style="color: hsl({{ hue }}, 100%, 50%)">Hue {{ hue }}</h3>
-	{% for saturation in range(100, 0, -20) %}
-	    <p style="font-size: 16pt; color: hsl({{ hue }}, {{ saturation }}%, 50%); margin-left: {{ 100 - saturation }}px">
-		{{ saturation }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-	{% endfor %}
-    {% endfor %}
 
-    <h2>Hue on inverted background</h2>
-    {% for hue in range(0, 360, 10) %}
-	<h3 style="color: hsl({{ hue }}, 100%, 50%)">Hue {{ hue }}</h3>
-	<div class="inverted-color-gray-20" style="padding: 10px">
-	    {% for saturation in range(100, 0, -20) %}
-		<p style="font-size: 16pt; color: hsl({{ hue }}, {{ saturation }}%, 50%); margin-left: {{ 100 - saturation }}px">
-		    {{ saturation }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
-	    {% endfor %}
-	</div>
-    {% endfor %}
+    <h2 id="introduction">Introduction</h2>
+    <p>
+	In practice a colour is constructed as a painter mixes primary colours. A colour is defined by:
+	<ul>
+	    <li>its <strong>hue</strong> (red, blue, green, etc.),</li>
+	    <li>a colour <strong>saturation</strong> which measure the colour purity,</li>
+	    <li>and a <strong>brightness</strong>.</li>
+	</ul>
+	Hue is usually defined as an angle position on a colour wheel.
+    </p>
+    <p>
+	<strong>Rule: A desaturated or pastel colour looks softer than a pure red, green or blue.</strong>
+    </p>
+    <p>
+	<strong>Rule: The foreground and background colour must maximise the contrast.</strong><br>
+	This concept is normalised in architectural design of buildings dedicated to public in order
+	to satisfy all kind of visual perceptions.<br>
+	Contrast can be accurately measured with a color checker (brightness difference).<br>
+    </p>
+    <p>
+	<strong>Rule: On white background, a dark or bluish (yellow-redish-orange) foreground colour are best.</strong><br>
+	<strong>Rule: On dark background, a white or yellow-green (orange) foreground colour are best.</strong><br>
+	Both are dual.
+    </p>
 
-    <h2>Color Contrast Table</h2>
+
+    <h2 id="color-contrast-table">Color Contrast Table</h2>
+    <p><strong>
+	Notice the poor contrasted circular zones in the table.<br>
+	Remenber the hue is defined on a wheel and we can thus wrap the rows and columns to form a sphere.
+    </strong></p>
     <table class="table" style="font-size: 13pt; text-align: center">
 	<tr style="color: #fff">
 	    <td style="background: #fff">Contrast</td>
@@ -81,7 +75,12 @@
 	{% endfor %}
     </table>
 
-    <h2>Luminosity Contrast Table</h2>
+
+    <h2 id="luminosity-contrast-table">Luminosity Contrast Table</h2>
+    <p><strong>
+	Notice the contrasted triangles.<br>
+	Remenber the hue is defined on a wheel and we can thus wrap the rows to form a cylinder.
+    </strong></p>
     <table class="table" style="font-size: 13pt; text-align: center">
 	<tr style="color: #fff">
 	    <td></td>
@@ -105,7 +104,41 @@
 	{% endfor %}
     </table>
 
-    <h2>Blue Table</h2>
+
+    <h2 id="foreground-gray-level">Foreground Gray Level</h2>
+    {% for i in range(0, 100, 10) %}
+	<p style="font-size: 12pt" class="color-gray-{{ i }}">
+	    {{ i }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+    {% endfor %}
+
+    {% for i in range(0, 100, 10) %}
+	<p style="font-size: 12pt" class="color-gray-{{ i }}">{{ i }}%
+	    Eius populus ab incunabulis primis ad usque
+	    pueritiae tempus extremum, quod annis circumcluditur fere trecentis,
+	    circummurana pertulit bella, deinde aetatem ingressus adultam post multiplices
+	    bellorum aerumnas Alpes transcendit et fretum, in iuvenem erectus et virum ex
+	    omni plaga quam orbis ambit inmensus, reportavit laureas et triumphos, iamque
+	    vergens in senium et nomine solo aliquotiens vincens ad tranquilliora vitae
+	    discessit.
+	</p>
+    {% endfor %}
+
+
+    <h2 id="background-gray-level">Background Gray Level</h2>
+    {% for i in range(0, 100, 10) %}
+	<h3>background {{ i }}%</h3>
+	<div class="inverted-color-gray-{{ i }}" style="padding: 10px">
+	    {% for j in range(0, 110, 10) %}
+		{% if  (i-j)|abs > 20 %}
+		    <p style="font-size: 12pt" class="color-gray-{{ j }} ">
+			{{ j }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+		{% endif %}
+	    {% endfor %}
+	</div>
+    {% endfor %}
+
+
+    <h2 id="blue-table">Blue Foreground Table</h2>
     <table class="table" style="font-size: 13pt; text-align: center">
 	{% for luminosity in range(40, 70, 10) %}
 	    {% for hue in range(200, 250, 10) %}
@@ -118,7 +151,8 @@
 	{% endfor %}
     </table>
 
-    <h2>Black Table</h2>
+
+    <h2 id="dark-table">Dark Background Table</h2>
     <table class="table inverted-color-gray-20" style="font-size: 13pt; text-align: center">
 	{% for luminosity in range(40, 70, 10) %}
 	    {% for hue in range(30, 120, 10) %}
@@ -130,4 +164,28 @@
 	    {% endfor %}
 	{% endfor %}
     </table>
+
+
+    <h2 id="foreground-hue">Foreground Hue</h2>
+    {% for hue in range(0, 360, 10) %}
+	<h3 style="color: hsl({{ hue }}, 100%, 50%)">Hue {{ hue }}</h3>
+	{% for saturation in range(100, 0, -20) %}
+	    <p style="font-size: 16pt; color: hsl({{ hue }}, {{ saturation }}%, 50%); margin-left: {{ 100 - saturation }}px">
+		{{ saturation }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+	{% endfor %}
+    {% endfor %}
+
+
+    <h2 id="foreground-hue-on-nverted">Foreground Hue on inverted background</h2>
+    {% for hue in range(0, 360, 10) %}
+	<h3 style="color: hsl({{ hue }}, 100%, 50%)">Hue {{ hue }}</h3>
+	<div class="inverted-color-gray-20" style="padding: 10px">
+	    {% for saturation in range(100, 0, -20) %}
+		<p style="font-size: 16pt; color: hsl({{ hue }}, {{ saturation }}%, 50%); margin-left: {{ 100 - saturation }}px">
+		    {{ saturation }}% Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+	    {% endfor %}
+	</div>
+    {% endfor %}
+    <p></p>{# to add some space #}
+
 {% endblock %}

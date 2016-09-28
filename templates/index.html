@@ -1,7 +1,27 @@
 {% extends "_base.html" %}
 
 {% block content %}
-    <h1>CSS Demo</h1>
+    <div class="jumbotron">
+	<h1>CSS Demo</h1>
+	<hr>
+	<p>
+	    <strong>This web site demonstrates various CSS settings like typography and colours.</strong>
+	</p>
+	<p><strong>
+	    Tips: You can change things using the developer mode of your browser<br>
+	    <span style="color: transparent">Tips:</span> or you can clone the <a href="https://github.com/FabriceSalvaire/css-demo">repository</a>.
+	</strong></p>
+	<p>
+	    The site building process is based on the <a href="http://jinja.pocoo.org/docs/dev/">Jinja2</a> template engine,
+	    <a href="http://sass-lang.com/">SASS</a> and <a href="http://gulpjs.com/">Gulp</a>.
+	</p>
+	<p>The CSS is based on top of the <a href="http://getbootstrap.com/">Bootsrap</a> framework.</p>
+	<p>
+	    This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC by-nc-na</a> license
+	    and sources are available <a href="https://github.com/FabriceSalvaire/css-demo">here</a>.
+	</p>
+    </div>
+    <h2>Table of Contents</h2>
     <ul style="font-size: 150%">
 	{% for item in menus %}
 	    <li class="child first">
