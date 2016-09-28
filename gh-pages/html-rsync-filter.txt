@@ -1,0 +1,6 @@
+.git
+.gitignore
+README.rst
+static
+html-rsync-filter.txt
+update.sh

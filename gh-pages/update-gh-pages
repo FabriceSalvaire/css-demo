@@ -1,0 +1,37 @@
+#! /bin/bash
+
+####################################################################################################
+
+root_dir=$(dirname $(dirname $(realpath $0)))
+html="${root_dir}/html"
+static="${root_dir}/static"
+source_gh_pages="${root_dir}/gh-pages"
+
+echo Source Path: ${root_dir}
+echo HTML Build Path: ${html_build}
+
+origin='git@github.com:FabriceSalvaire/css-demo.git'
+
+####################################################################################################
+
+tmp_dir=$(mktemp -d)
+if [ -e ${tmp_dir} ]; then
+  pushd ${tmp_dir}
+
+  git clone ${origin} css-demo-gh-pages --branch gh-pages --single-branch
+  pushd css-demo-gh-pages
+  # sync with origin if already cloned
+  # git fetch origin
+  git checkout gh-pages
+
+  rsync --delete -av --exclude-from=${source_gh_pages}/html-rsync-filter.txt ${html}/ .
+  rsync --delete -av  ${static} .
+  cp ${source_gh_pages}/README.rst .
+
+  git add --all *
+  git commit -m 'update'
+  git push -u origin gh-pages
+
+  popd -1 ; popd
+  rm -rf ${tmp_dir}
+fi
