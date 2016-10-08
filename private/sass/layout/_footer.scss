@@ -6,6 +6,7 @@
 // getting to large
 
 footer {
+    margin-top: $padding-large-vertical;
     padding: 2*$padding-large-vertical 0;
     background: $navbar-inverse-bg;
     color: $navbar-inverse-color;
