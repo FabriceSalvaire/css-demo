@@ -1,0 +1,44 @@
+{% extends "_base.html" %}
+
+{% block content %}
+    <h1>Material</h1>
+    <div>
+	<div class="center-block" style="
+	     line-height: 100px;
+	     width: 500px;
+	     margin-bottom: 30px;
+	     background: hsl(220, 80%, 60%);
+	     color: white;
+	     text-align: center;
+	     ">
+	    <span style="font-size: 200%">Normal Box</span>
+	</div>
+
+	<div class="center-block material-rised"
+	     style="
+	     line-height: 100px;
+	     width: 500px;
+	     background: hsl(220, 80%, 60%);
+	     color: white;
+	     text-align: center;
+	     ">
+	    <p style="font-size: 200%">Rised Box</p>
+	</div>
+
+	<div class="center-block material-rised"
+	     style="
+	     line-height: 100px;
+	     width: 500px;
+	     background: hsl(220, 80%, 60%);
+	     color: white;
+	     text-align: center;
+	     ">
+	    <p style="font-size: 200%">
+		Rised Box
+		<a class="material-floating-button" style="">
+		    <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+		</a>
+	    </p>
+	</div>
+    </div>
+{% endblock %}
