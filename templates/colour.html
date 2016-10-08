@@ -40,9 +40,59 @@
     <p>
 	<strong>Rule: On white background, a dark or bluish (yellow-redish-orange) foreground colour are best.</strong><br>
 	<strong>Rule: On dark background, a white or yellow-green (orange) foreground colour are best.</strong><br>
-	Both are dual.
+	Both are dual. In the past, monochrome CRT screens were designed with a green or orange fluorescence.
     </p>
 
+    <h3>Perceptual Colour</h3>
+    <p>
+	Human eye is much sensitive in green and red in day light configuration, blue sensitivity is
+	much more lower.  In night configuration, red sensitivity is much more lower than green and
+	the vision is monochromatic.
+    </p>
+    <p>
+	Blue light is a wakup signal for our brain since it is the colour of the sky.
+    </p>
+
+    <h3>Colour Ambience</h3>
+    <p>
+	We will prefer a bright (day light) ambiance like for a standard paper sheet instead of a
+	twilight or night ambiance. Dark background only work for some specific cases. However we
+	can work with a dark background, but not communicate. On an LCD screen, it stops the
+	backlight luminosity and provide a high contrast with bright contents. It can help to
+	contrast and match the context of an image or a video, for example.
+    </p>
+    <p class="inverted-color-gray-10 text-center lead" style="color: white; padding: 5em">
+	Is it a joyous ambiance?
+    </p>
+
+    <h3>Contrast Table</h3>
+    <p>
+	<strong>Contrat must be higher than 70.</strong>
+	<table class="table table-bordered" style="text-align: center">
+	    <tr>
+		<td></td>
+		{% for name in contrast_matrix['columns'] %}
+		    <td style="font-size: 120%">{{ name }}</td>
+		{% endfor %}
+	    </tr>
+	    {% for name in contrast_matrix['rows'] %}
+		<tr>
+		    <td style="font-size: 120%">{{ name }}</td>
+		    {% set i = loop.index0 %}
+		    {% for value in contrast_matrix['triangle'][i] %}
+			<td>
+			    {% if value >= 70 %}
+				<strong style="font-size: 120%">{{ value }}</strong>
+			    {% else %}
+				{{ value }}
+			    {% endif %}
+			</td>
+		    {% endfor %}
+		</tr>
+	    {% endfor %}
+	</table>
+	Source: Arthur P. and Passini R., Wayfinding - People, Signs and Architecture (page 179), McGraw-Hill Ryerson, Whitby, Ontario, 1992, ISBN 0-07-551016-2.
+    </p>
 
     <h2 id="color-contrast-table">Color Contrast Table</h2>
     <p><strong>
@@ -186,6 +236,32 @@
 	    {% endfor %}
 	</div>
     {% endfor %}
-    <p></p>{# to add some space #}
+
+    {% for color1 in couples|sort %}
+	{% if color1 not in ('Black', 'Gray', 'White') %}
+	    <h3>{{ color1 }}</h3>
+	    {% for color2 in couples[color1] %}
+		<h4>{{ color2 }}</h4>
+		<table class="table" style="font-size: 14pt; text-align: center">
+		    {% set hue = colour_hsl[color1][0] %}
+		    {% set saturation = colour_hsl[color1][1] %}
+		    {% for hue in range(hue -30, hue +35, 5) %}
+			<tr style="">
+			    {% for saturation in range(saturation -20, saturation +20, 5) %}
+				{% if saturation <= 100 %}
+				    <td style="
+					background: hsl({{ hue }}, {{ saturation }}%, {{ colour_hsl[color1][2] }}%);
+					color: hsl({{ colour_hsl[color2][0] }}, {{ colour_hsl[color2][1] }}%, {{ colour_hsl[color2][2] }}%);
+					font-weight: 600
+					">
+					Contrast</td>
+				{% endif %}
+			    {% endfor %}
+			</tr>
+		    {% endfor %}
+		</table>
+	    {% endfor %}
+	{% endif %}
+    {% endfor %}
 
 {% endblock %}

@@ -9,18 +9,108 @@ import os
 
 ####################################################################################################
 
+# Source: Arthur P. and Passini R., Wayfinding - People, Signs and Architecture (page 179), McGraw-Hill Ryerson, Whitby, Ontario, 1992, ISBN 0-07-551016-2.
+
+contrast_matrix_columns = (
+    'Beige',
+    'White',
+    'Gray',
+    'Black',
+    'Brown',
+    'Pink',
+    'Violet',
+    'Green',
+    'Orange',
+    'Blue',
+    'Yellow',
+)
+
+contrast_matrix_rows = (
+    'Red',
+    'Yellow',
+    'Blue',
+    'Orange',
+    'Green',
+    'Violet',
+    'Pink',
+    'Brown',
+    'Black',
+    'Gray',
+    'White',
+)
+
+contrast_matrix_triangle = (
+    (78, 84, 32, 38,  7, 57, 28, 24, 62, 13, 82),
+    (14, 16, 73, 89, 80, 58, 75, 76, 52, 79),
+    (75, 82, 21, 47,  7, 50, 17, 12, 56),
+    (44, 60, 44, 76, 59, 12, 47, 50),
+    (72, 80, 11, 53, 18, 43,  6),
+    (70, 79,  5, 56, 22, 40),
+    (51, 65, 37, 73, 53),
+    (77, 84, 26, 43),
+    (89, 91, 58),
+    (69, 78),
+    (28,),
+)
+
+contrast_matrix = {
+    'columns': contrast_matrix_columns,
+    'rows': contrast_matrix_rows,
+    'triangle': contrast_matrix_triangle,
+    }
+
+colour_hsl = {
+    # Brightness Shades
+    'Black': (0, 0, 0),
+    'White': (0, 0, 100),
+    'Gray': (0, 0, 25),
+
+    # Primary Colours
+    'Red':    (  0, 90, 50),
+    'Orange': ( 30, 90, 50),
+    'Yellow': ( 60, 90, 50),
+    'Green':  (120, 90, 50),
+    'Blue':   (240, 90, 50),
+    'Violet': (300, 90, 50),
+
+    'Pink':   (350,  100, 88),
+    'Beige':  (39,  77, 83), # hsl(60, 56%, 91%)
+    'Brown':  (0, 59, 41),
+}
+
+couples = {}
+def add_couple(colour1, colour2):
+    if colour1 not in couples:
+        couples[colour1] = [colour2]
+    else:
+        couples[colour1].append(colour2)
+for i, colour1 in enumerate(contrast_matrix['rows']):
+    row = contrast_matrix['triangle'][i]
+    for j, colour2 in enumerate(contrast_matrix['columns']):
+        contrast = row[j]
+        if j < len(row) and contrast >= 70:
+            add_couple(colour1, colour2)
+            add_couple(colour2, colour1)
+for array in couples.values():
+    array.sort()
+for colour, array in couples.items():
+    print(colour, array)
+
+####################################################################################################
+
 environment = Environment(loader = FileSystemLoader('templates', followlinks=True))
 
 pages = [os.path.basename(x) for x in glob.glob('templates/[a-z]*.html')]
 
 menus = (
+    {'href': 'introduction.html', 'title':'Introduction'},
     {'href': 'colour.html', 'title':'Colour'},
     {'href': 'typography.html', 'title':'Typography'},
+    {'href': 'material.html', 'title':'Material'},
 )
 
 for page in pages:
     template = environment.get_template(page)
     print("Generate " + page)
     with open(os.path.join('html', page), 'w') as f:
-        f.write(template.render(menus = menus))
-
+        f.write(template.render(menus=menus, contrast_matrix=contrast_matrix, couples=couples, colour_hsl=colour_hsl))
