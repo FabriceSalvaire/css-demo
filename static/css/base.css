@@ -9376,6 +9376,7 @@ button.close {
 * or /sass/sites.
 */
 footer {
+  margin-top: 10px;
   padding: 20px 0;
   background: #35363C;
   color: #9d9d9d; }
@@ -9610,3 +9611,37 @@ a.brand-gray-lighter:focus {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 300; }
+
+.material-rised, a.material-floating-button {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+a.material-floating-button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 0px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  border-color: transparent;
+  border-width: 0px;
+  background-color: #ee2b4b;
+  color: white; }
+  a.material-floating-button:hover {
+    background-color: #f0425f;
+    color: white; }
+  a.material-floating-button:active {
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.48), 0 2px 30px 0 rgba(0, 0, 0, 0.36); }
