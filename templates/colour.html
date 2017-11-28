@@ -68,7 +68,7 @@
     <h3>Contrast Table</h3>
     <p>
 	<strong>Contrat must be higher than 70.</strong>
-	<table class="table table-bordered" style="text-align: center">
+	<table class="table table-bordered" style="text-align: center;">
 	    <tr>
 		<td></td>
 		{% for name in contrast_matrix['columns'] %}
@@ -99,7 +99,12 @@
 	Notice the poor contrasted circular zones in the table.<br>
 	Remenber the hue is defined on a wheel and we can thus wrap the rows and columns to form a sphere.
     </strong></p>
-    <table class="table" style="font-size: 13pt; text-align: center">
+    <table class="table" style="
+	   font-size: 13pt;
+	   text-align: center;
+	   border-collapse: separate;
+	   border-spacing: 3px;
+	   ">
 	<tr style="color: #fff">
 	    <td style="background: #fff">Contrast</td>
 	    <td style="background: hsl(0, 0%, 20%)">Contrast</td>
@@ -131,7 +136,12 @@
 	Notice the contrasted triangles.<br>
 	Remenber the hue is defined on a wheel and we can thus wrap the rows to form a cylinder.
     </strong></p>
-    <table class="table" style="font-size: 13pt; text-align: center">
+    <table class="table" style="
+	   font-size: 13pt;
+	   text-align: center;
+	   border-collapse: separate;
+	   border-spacing: 3px;
+	   ">
 	<tr style="color: #fff">
 	    <td></td>
 	    {% for luminosity in range(0, 110, 10) %}
@@ -242,7 +252,12 @@
 	    <h3>{{ color1 }}</h3>
 	    {% for color2 in couples[color1] %}
 		<h4>{{ color2 }}</h4>
-		<table class="table" style="font-size: 14pt; text-align: center">
+		<table class="table" style="
+		       font-size: 14pt;
+		       text-align: center;
+		       border-collapse: separate;
+		       border-spacing: 10px;
+		       ">
 		    {% set hue = colour_hsl[color1][0] %}
 		    {% set saturation = colour_hsl[color1][1] %}
 		    {% for hue in range(hue -30, hue +35, 5) %}
@@ -263,5 +278,21 @@
 	    {% endfor %}
 	{% endif %}
     {% endfor %}
+
+    <h2>HSL Table</h2>
+    <table class="table" style="
+	   border-collapse: separate;
+	   border-spacing: 10px;
+	   ">
+	{% for hue in range(0, 360, 5) %}
+	    {% for saturation in range(25, 101, 5) %}
+		<tr style="">
+		    {% for luminosity in range(50 -30, 50 +31, 10) %}
+			<td style="background: hsl({{ hue }}, {{ saturation }}%, {{ luminosity }}%);"></td>
+		    {% endfor %}
+		</tr>
+	    {% endfor %}
+	{% endfor %}
+    </table>
 
 {% endblock %}

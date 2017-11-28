@@ -87,8 +87,7 @@ def add_couple(colour1, colour2):
 for i, colour1 in enumerate(contrast_matrix['rows']):
     row = contrast_matrix['triangle'][i]
     for j, colour2 in enumerate(contrast_matrix['columns']):
-        contrast = row[j]
-        if j < len(row) and contrast >= 70:
+        if j < len(row) and row[j] >= 70:
             add_couple(colour1, colour2)
             add_couple(colour2, colour1)
 for array in couples.values():
